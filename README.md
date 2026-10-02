@@ -1,14 +1,12 @@
-# Seguretat del Software
+# eIDAS 2.0
 
 ![Logo UIB](./content/img/logo-uib.png)
 
 > **Universitat de les Illes Balears**
 >
-> **Grau d'Enginyeria Telemàtica​**
->
-> **Professor**: Miquel A. Cabot ([miquel.cabot@uib.cat](mailto:miquel.cabot@uib.cat))
+> **Autor**: Miquel A. Cabot ([miquel.cabot@uib.cat](mailto:miquel.cabot@uib.cat))
 
-Apunts de l'assignatura **Seguretat del Software** en format [mdBook](https://rust-lang.github.io/mdBook/), amb presentacions generades mitjançant [reveal-js](https://revealjs.com/).
+Documentació sobre el funcionament d'**eIDAS 2.0**: el Reglament (UE) 2024/1183, la cartera europea d'identitat digital (EUDI Wallet), els seus actors, credencials i protocols. Està escrita en format [mdBook](https://rust-lang.github.io/mdBook/), amb presentacions generades mitjançant [reveal-js](https://revealjs.com/).
 
 ## Llegeix el Llibre
 
@@ -16,7 +14,7 @@ Us recomanam la [versió en línia](#disponible-en-línia) per a un ús general.
 
 ### Disponible en línia
 
-La darrera versió està disponible a: [https://uib-software-security.github.io/book/](https://uib-software-security.github.io/book/)
+La darrera versió està disponible a: [https://cabot.dev/eidas/](https://cabot.dev/eidas/)
 
 ### Compilar sense connexió
 
