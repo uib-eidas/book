@@ -31,6 +31,25 @@ makers --list-all-steps
 
 Les tasques haurien de ser autoexplicatives.
 
+### Servir en local amb Yarn
+
+El `package.json` inclou dos scripts per veure el contingut en local. Necessiteu [Yarn](https://yarnpkg.com/) i haver instal·lat les dependències un cop amb `yarn install`.
+
+**Presentacions** (`serve-slides`): arrenca [reveal-md](https://github.com/webpro/reveal-md) a [http://localhost:1948](http://localhost:1948), amb un llistat de tots els fitxers `slides.md`. Es recarrega automàticament quan en modificau un.
+
+```sh
+yarn serve-slides
+```
+
+**Llibre** (`serve-book`): amb Python 3, serveix el contingut de la carpeta `html-book` a [http://localhost:1949](http://localhost:1949). No compila ni detecta canvis, així que primer heu de generar el llibre i tornar-ho a fer després de cada modificació.
+
+```sh
+mdbook build
+yarn serve-book
+```
+
+Els enllaços «Obrir la presentació» del llibre només funcionen si les presentacions s'han incrustat dins `html-book`. La tasca `makers serve` ho fa tot: compila presentacions i llibre, les incrusta i arrenca aquest mateix servidor.
+
 ## Llicència
 
 Tots els materials d'aquest repositori estan llicenciats sota la Llicència Mozilla Public License Versió 2.0. Consulteu la [Llicència](./LICENSE.md) per a més detalls.
