@@ -3,7 +3,6 @@ title = "eIDAS 2.0 (UIB)"
 authors = ["Miquel A. Cabot"]
 description = "Documentació sobre el funcionament d'eIDAS 2.0 (UIB)"
 language = "en"
-multilingual = false
 src = "content"
 
 [build]

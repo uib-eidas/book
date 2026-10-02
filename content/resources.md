@@ -1,9 +1,5 @@
 # 📚 Recursos
 
-## 🌐 Repositori de l'assignatura
-
-- [GitHub de l'assignatura](https://github.com/uib-software-security)
-
 ## 🎓 Recursos per estudiants
 
 - [GitHub Student Developer Pack](https://education.github.com/pack)
