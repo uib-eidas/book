@@ -60,9 +60,7 @@
 
 ## Els tres models d'identitat digital
 
-1. Model **centralitzat**
-2. Model **federat**
-3. Model **descentralitzat**
+![Els tres models d'identitat digital: centralitzat, federat i descentralitzat](./img/tres-models.svg)
 
 ---
 
@@ -257,6 +255,10 @@ Segons el model de dades de credencials verificables del W3C:
 
 ## El triangle de confiança
 
+![El triangle de confiança entre emissor, titular i verificador](./img/triangle-confianca.svg)
+
+---v
+
 - Les credencials només transmeten confiança si **el verificador confia en l'emissor**
   - No cal que hi tengui una relació directa, comercial ni legal
 - El triangle descriu només **una banda** de la transacció
@@ -303,6 +305,14 @@ Segons el model de dades de credencials verificables del W3C:
 
 ---v
 
+## Anatomia d'un DID
+
+![Parts d'un DID: esquema, mètode DID i identificador específic del mètode](./img/did.svg)
+
+- El DID fa d'**adreça** d'una clau pública en una xarxa descentralitzada
+
+---v
+
 ## Mètodes DID
 
 - Cada **mètode DID** defineix com operar sobre una xarxa concreta:
@@ -346,6 +356,12 @@ Segons el model de dades de credencials verificables del W3C:
   - L'administra una **autoritat de governança**
   - Especifica quins emissors estan autoritzats i quines polítiques han de seguir
 - El verificador pot acceptar credencials d'un emissor que no coneix si està autoritzat per un marc en què confia
+
+---v
+
+## El segon triangle de confiança
+
+![El marc de governança autoritza l'emissor i el verificador confia en el marc](./img/governanca.svg)
 
 ---
 

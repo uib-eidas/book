@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" font-family="Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle">
+  <rect width="760" height="190" fill="#ffffff"/>
+
+  <g font-family="Menlo, Consolas, monospace" font-size="34" font-weight="bold">
+    <text x="104.5" y="80" textLength="61" lengthAdjust="spacingAndGlyphs" fill="#0065bd">did</text>
+    <text x="145" y="80" fill="#888888">:</text>
+    <text x="227" y="80" textLength="143" lengthAdjust="spacingAndGlyphs" fill="#b3541e">example</text>
+    <text x="308.5" y="80" fill="#888888">:</text>
+    <text x="502" y="80" textLength="367" lengthAdjust="spacingAndGlyphs" fill="#2e7d32">123456789abcdefghi</text>
+  </g>
+
+  <g stroke-width="3" fill="none">
+    <path d="M74 100v8h61v-8" stroke="#0065bd"/>
+    <path d="M156 100v8h143v-8" stroke="#b3541e"/>
+    <path d="M319 100v8h367v-8" stroke="#2e7d32"/>
+  </g>
+
+  <text x="104.5" y="140" fill="#0065bd">Esquema</text>
+  <text x="227" y="140" fill="#b3541e">Mètode DID</text>
+  <text x="502" y="140" fill="#2e7d32">Identificador específic del mètode</text>
+</svg>

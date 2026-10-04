@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 450" font-family="Helvetica, Arial, sans-serif" font-size="17" text-anchor="middle">
+  <defs>
+    <marker id="fletxa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#0065bd"/>
+    </marker>
+  </defs>
+  <rect width="760" height="450" fill="#ffffff"/>
+
+  <g stroke="#0065bd" stroke-width="3" marker-end="url(#fletxa)">
+    <line x1="150" y1="198" x2="315" y2="104"/>
+    <line x1="445" y1="102" x2="612" y2="196"/>
+    <line x1="538" y1="230" x2="224" y2="230" stroke-dasharray="7 6"/>
+    <line x1="300" y1="368" x2="152" y2="264"/>
+    <line x1="610" y1="262" x2="462" y2="366"/>
+  </g>
+
+  <g fill="#e8f1fa" stroke="#0065bd" stroke-width="3">
+    <rect x="300" y="40" width="160" height="60" rx="10"/>
+    <rect x="60" y="200" width="160" height="60" rx="10"/>
+    <rect x="540" y="200" width="160" height="60" rx="10"/>
+    <rect x="260" y="370" width="240" height="60" rx="10" fill="#fff4e0" stroke="#b3541e"/>
+  </g>
+  <g font-weight="bold" fill="#1a1a1a" font-size="20">
+    <text x="380" y="77">Titular</text>
+    <text x="140" y="237">Emissor</text>
+    <text x="620" y="237">Verificador</text>
+    <text x="380" y="407">Marc de governança</text>
+  </g>
+
+  <g fill="#1a1a1a">
+    <text x="215" y="140" text-anchor="end">Emet la credencial</text>
+    <text x="545" y="140" text-anchor="start">Presenta la prova</text>
+    <text x="380" y="218">Confia en l'emissor</text>
+    <text x="205" y="335" text-anchor="end">Autoritza l'emissor</text>
+    <text x="555" y="335" text-anchor="start">Confia en el marc</text>
+  </g>
+</svg>
