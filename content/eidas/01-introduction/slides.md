@@ -1,364 +1,384 @@
-# Introducció a la seguretat del software
+# Introducció a la identitat digital sobirana (SSI)
 
 ---
 
-## Seguretat informàtica o ciberseguretat
+## Què és la identitat digital sobirana?
 
-- **Definició**: Branca de la informàtica que estudia com assegurar que els recursos dels sistemes informàtics siguin utilitzats de la forma en què es van definir.
-- **Objectiu**: Creació de plataformes segures on els agents que hi interaccionen (programes i usuaris) només puguin realitzar accions autoritzades.
-
----
-
-## Correcció vs. Seguretat
-
-- **Correcció**: Assegura que els sistemes es comportin com s'espera en circumstàncies normals.
-  - Exemple: Un sistema de pagament que processa correctament les transaccions.
-- **Seguretat**: Es preocupa de prevenir **comportaments no desitjats**.
-  - Considera un enemic/oponent/hacker/adversari que intenta de forma **activa** i **maliciosa** eludir qualsevol mesura de protecció
+- **_Self-Sovereign Identity_ (SSI)**: nou model d'identitat digital a Internet
+- **Identitat digital**: com demostram qui som als llocs web, serveis i aplicacions amb els quals volem establir una relació de confiança
+- És un **canvi de paradigma**, no només tecnològic:
+  - Canvia la infraestructura d'Internet
+  - Canvia qui té el **control** de la identitat i de les dades
 
 ---
 
-## Diferència clau
+## Internet no té capa d'identitat
 
-- **Correcció** -> Què _ha de fer_ un sistema.
-- **Seguretat** -> Què _no ha de fer_ un sistema.
+> _The Internet was built without an identity layer._
+>
+> — Kim Cameron, arquitecte en cap d'identitat de Microsoft, _The Laws of Identity_ (2005)
 
----
-
-## Tipus de comportament no desitjat
-
-1. **Confidencialitat**:
-   - Assegura que només els usuaris amb drets, privilegis i necessitat d'accedir a la informació poden fer-ho
-   - Exemple: Robatori d'informació com secrets corporatius, dades personals,...
-2. **Integritat**:
-   - Fa que les dades estiguin emmagatzemades com espera l'usuari: que no siguin alterades sense el seu consentiment
-   - Exemple: instal·lar software no desitjat (spyware,...), destrucció o modificació de dades (logs, registres de bases de dades...)
-3. **Disponibilitat _(Availability)_**:
-   - Intenta que els usuaris puguin accedir als serveis amb normalitat en el moment desitjat.
-   - Exemple: atac de denegació d'accés (DoS)
-
----
-
-## Triada CIA
-
-![Triada CIA](./img/cia_triad.png)
-
----
-
-## Exemples de violacions de seguretat
-
-- **RSA (març 2011)**
-  - Es varen robar fitxes que van permetre el compromís posterior dels clients amb dispositius RSA SecureID
-  - [Més informació](https://www.bankvault.com/classics-the-2011-rsa-hack/)
-- **Adobe (octubre 2013)**: Codi font i registres de clients robats.
-  - Es va robar el codi font, i 130 milions de registres de clients (incloses les contrasenyes)
-  - [Més informació](https://www.bbc.com/news/technology-24740873)
-- **Target (novembre 2013)**: 40 milions de dades de targetes de crèdit i dèbit robades.
-  - Es varen robar uns 40 milions de dades de targetes de crèdit i dèbit
-  - [Més informació](https://www.nbcnews.com/business/business-news/target-settles-2013-hacked-customer-data-breach-18-5-million-n764031)
-
----
-
-## Tipus d'atacs informàtics
-
-1. **Interrupció**: Atempta contra la **disponibilitat** d'un recurs informàtic, ja sigui hardware, un servei o informació.
-2. **Intercepció**: Vulnera la **confidencialitat** de les comunicacions de dades, ja s'està accedint a informació per a la qual no es té permís.
-3. **Fabricació**: Vulnera la característica d'**integritat**, creant recursos nous per a suplantar els autèntics.
-4. **Modificació**: Vulnera la **integritat** de les dades, alterant-les d'alguna manera des de la seva font original fins al receptor d'aquestes.
-
----
-
-## Defectes i vulnerabilitats
-
-- Moltes infraccions comencen explotant una **vulnerabilitat**
-- **Vulnerabilitat**: **Defecte del programari** rellevant per a la seguretat que pot ser **explotat** (_exploit_) per produir un comportament no desitjat
-- Hi ha un **defecte** del programari quan el programari es comporta incorrectament, és a dir, no compleix el seu requisits
-- **Defectes**:
-  - **Flaw** (defecte): Defecte en el **disseny**
-  - **Bug** (error): Defecte en la **implementació**
-
----
-
-## Correcció i seguretat
-
-- És massa car corregir tots els _bugs_ abans de desplegar els programes
-  - Per tant, les empreses només arreglen els que tenen més probabilitats d'afectar als usuaris normals
-- A tenir en compte: els **adversaris/hackers** no són usuaris normals
-- L'adversari intentarà activament trobar defectes en interaccions de característiques i casos extrems
-  - Per a un usuari típic, trobar un _bugs_ (accidentalment) provocarà un error, que després intentarà evitar.
-  - Un adversari treballarà per trobar un _bugs_ i explotar-lo per assolir els seus objectius
-
----
-
-## Solució
-
-> Per garantir la seguretat, hem d'**eliminar els bugs i defectes de disseny** i/o fer-los més **difícils d'explotar**
-
----
-
-## Seguretat del software
-
-- La seguretat del software és un tipus de seguretat informàtica que es centra en el **disseny i la implementació segura del software**
-  - Evitar vulnerabilitats del codi, flaws i bugs
-  - Utilitzant els millors llenguatges, eines i mètodes
-- Focus d'estudi: **EL CODI**
-- Per contra: molts enfocaments populars de seguretat tracten el programari com una **caixa negra** (ignorant el codi)
-  - Seguretat del sistema operatiu, antivirus, tallafocs, etc.
-
----
-
-## Per què és important la seguretat del software?
-
-- Els **defectes del software** solen ser la causa principal dels problemes de seguretat
-  - **La seguretat del software té com a objectiu abordar aquests defectes directament**
-- Altres formes de seguretat solen ignorar el programari i construir defenses al seu voltant
-  - Però si es mantenen els defectes del programari, els atacants poden trobar una manera de saltar-se aquestes defenses
-
----
-
-![Seguretat del software](./img/security.png)
-
----
-
-## Altres formes de seguretat
-
-- Seguretat del **sistema operatiu**
-  - Gestionen les accions dels programes (_system calls_)
-  - Per exemple, polítiques de lectura i escriptura de fitxers, enviament i recepció de paquets de xarxa, engegar nous programes...
-- **Firewalls i IDSs** (_Intrusion Detection System_)
-  - Observen, bloquegen i filtren els missatges intercanviats per programes
-- **Antivirus**
-  - Cerquen signes de comportament maliciós als fitxers locals
-
----
-
-## Riscos i vulnerabilitats del programari
-
-- Els **sistemes d'informació i comunicació** i el **programari** són **susceptibles** de **contenir errors**
-  - Errors en el seu **disseny** (**_flaw_**) o **desenvolupament** (**_bug_**)
-- Un programari que **funciona correctament** és aquell que fa exactament tot allò pel que va ser creat i dissenyat.
-  - Pot ser **correcte** des del punt de vista **funcional** però a la vegada pot ser **insegur**
+- Internet es va dissenyar per interconnectar **màquines**, no persones
+- Amb TCP/IP només coneixem l'**adreça de la màquina** a la qual ens connectam
+- No sabem res de la **persona, organització o cosa** que hi ha al darrere
 
 ---v
 
-- Els errors en el programari poden ser utilitzats:
-  - per a atacar el sistema i posar-ne en perill el bon funcionament
-  - posar en perill la **confidencialitat** i l'ús de les dades que hi ha emmagatzemades
-  - com a porta d'entrada per a executar **codi maliciós**
+## Per què és tan difícil de resoldre?
+
+- La Internet original era petita: un club d'acadèmics que es coneixien entre ells
+- Avui hi ha milers de milions de persones i dispositius, i gairebé tots són **desconeguts**
+- Molts volen **enganyar-nos** sobre qui són o amb qui estam tractant
+- La identitat (o la seva absència) és una de les principals fonts de **cibercrim**
 
 ---
 
-## Bugs
+## Com de greu és el problema?
 
-- **_Bug_**: és un error, un defecte o fallada en un programa o sistema informàtic, que fa que es produeixi un resultat incorrecte o inesperat o que es comporti de forma no prevista
-- La majoria dels errors es deuen als errors comesos per les **persones**:
-  - en el **desenvolupament** del codi
-  - en el **disseny**
-- Quan es produeix un error en el programari, aquest error pot ser utilitzat per un **_hacker_** o un **atacant** com a **porta d'entrada**
-
-![Bug](./img/bug.png)
-
----
-
-## Bases de dades de vulnerabilitats
-
-- **Vulnerabilitat**: **debilitat** de qualsevol tipus que compromet la seguretat del sistema informàtic
-- Hi ha diversos organismes, fundacions i empreses que es dediquen a recollir, catalogar i **enregistrar les vulnerabilitats conegudes**
-- La informació sobre les vulnerabilitats es poden trobar en diverses bases de dades, repositoris i llistes de distribució públiques _open source_ o d'iniciativa privada a través de la xarxa
-- La informació és recopilada gràcies a les aportacions de:
-  - la comunitat
-  - els fabricants
-  - els organismes governamentals
-  - institucions i empreses públiques i privades
+- Un usuari d'empresa gestionava de mitjana **191 contrasenyes** (2017)
+- El **80%** de les bretxes per _hacking_ es deuen a contrasenyes compromeses
+- **3.000 milions** de comptes de Yahoo compromesos en una sola bretxa
+- La bretxa d'Equifax ha costat a l'empresa més de **4.000 milions de dòlars**
+- Més del **90%** dels consumidors nord-americans creuen que han perdut el control de les seves dades personals
 
 ---v
 
-- Aquestes bases de dades aporten informació addicional de gran interès, com ara:
-  - tipus de vulnerabilitat
-  - descripció
-  - conseqüències
-  - entorns i programaris afectats
-  - solucions (_patches_)
-  - prevencions
-  - dates de descoberta de la vulnerabilitat
-  - i altra informació d'interès.
+> Si no feim res, ens enfrontarem a una proliferació d'episodis de robatori i engany que erosionaran la confiança pública en Internet.
+>
+> — Kim Cameron (2005)
 
 ---
 
-## National Vulnerability Database
+## Blockchain i descentralització
 
-- [https://nvd.nist.gov/](https://nvd.nist.gov/)
-- NVD és un repositori del govern dels EUA
-  - Pertany al National Institute of Standards and Technology (NIST)
-- És una base de dades pública
-- Manté informació estandarditzada sobre vulnerabilitats
-- Aquesta gestió permet l'automatització de les mesures i gestió de vulnerabilitats
+- **2008**: Satoshi Nakamoto publica _Bitcoin: A Peer-to-Peer Electronic Cash System_
+- **2015**: la comunitat d'identitat (_Internet Identity Workshop_) comença a estudiar la «identitat blockchain»
+- Governs dels EUA, la Unió Europea, Xina i Corea exploren la identitat digital descentralitzada
+- Objectiu comú: passar de sistemes d'identitat **centralitzats** a sistemes **descentralitzats**
 
 ---
 
-## Cercador de vulnerabilitats d'NVD
+## Els tres models d'identitat digital
 
-![NVD](./img/nvd.png)
-
----
-
-## Informació d'una vulnerabilitat a NVD que afecta a Google Chrome
-
-![Vulnerabilitat NVD a Chrome](./img/nvd_chrome.png)
+1. Model **centralitzat**
+2. Model **federat**
+3. Model **descentralitzat**
 
 ---
 
-## Common Vulnerabilities and Exposures (CVE)
+## 1. Model centralitzat
 
-- [https://cve.mitre.org](https://cve.mitre.org)
-- CVE és un diccionari de coneixement públic sobre les vulnerabilitats de seguretat
-- Cada referència te un número d'identificació únic, d'aquesta forma proveeix una nomenclatura comú per al coneixement públic, que permet l'intercanvi de dades entre els productes de seguretat.
-
----
-
-## Informació d'una vulnerabilitat a CVE que afecta a Google Chrome
-
-![Vulnerabilitat CVE a Chrome](./img/cve_chrome.png)
-
----
-
-## Exploit
-
-- **_Exploit_**: codi que permet a un atacant / testejador aprofitar una vulnerabilitat del sistema i comprometre la seva seguretat, o causar un comportament no desitjat o imprevist del sistema
-- Es tracta d'un programa que aconsegueix **provocar l'error** aprofitant la vulnerabilitat d'un altre **programa**
-- Un cop ha provocat l'error, aprofita aquest error per a **injectar un codi** o un **_payload_** per tal que sigui executat i així obtenir el control del sistema atacat, o realitzar algun altre tipus d'atac amb altres finalitats
-
----
-
-## Payload
-
-- **_Payload_**: codi que s'executa en el destí atacat en executar-se un exploit
-  - L'exploit provoca l'error del sistema aprofitant una vulnerabilitat i injecta un payload amb el codi que es vol que s'executi en la màquina atacada
-- Normalment es tracta d'una seqüència d'instruccions en llenguatge assemblador amb l'objectiu d'executar-se en el sistema de destí per a crear accions, com per exemple:
-  - crear un usuari en el sistema remot
-  - executar alguna línia de comandes i enllaçar-ho a un port local, etc.
-- Un payload pot ser utilitzat per diversos exploits i que un mateix exploit pot utilitzar diversos payloads.
-
----
-
-## Exploits remots
-
-- Un atac remot és un atac que pot ser iniciat des d'una ubicació diferent de la de l'equip de la víctima
-- Funciona en una xarxa o a través d'Internet i explota la vulnerabilitat de seguretat sense accés previ al sistema vulnerable de la víctima
+- És el model de gairebé tots els identificadors i credencials: DNI, passaport, carnet de conduir, comptes d'usuari...
+- A Internet: ens registram i obtenim un **compte** (usuari i contrasenya) a cada lloc web
+  - Per això també s'anomena **identitat basada en comptes**
+- Les credencials **pertanyen a l'organització**, no a nosaltres
+  - Si esborram el compte, desapareixem; les dades, en canvi, les conserva l'organització
 
 ---v
 
-- La gran extensió d'Internet facilita la difusió del programari maliciós a través de la xarxa
-- Exemples de cucs (_worms_) que es difon per la xarxa: Sasser, Blaster o Code Red
-  - Aprofitaven serveis de xarxa vulnerables explotables en remot per copiar-se d'una màquina a una altra
-- En general, consisteix en servidors que intenten accedir a una aplicació client i un cop ho aconsegueixen, envien un exploit per a ser executat
+## Problemes del model centralitzat
+
+- La càrrega de recordar i gestionar totes les contrasenyes recau en **l'usuari**
+- Cada lloc aplica les seves pròpies polítiques de seguretat i privadesa
+- Les dades d'identitat **no són portables** ni reutilitzables
+- Les bases de dades centralitzades són **_honeypots_** gegants: origen d'algunes de les majors bretxes de dades de la història
 
 ---
 
-## Code Red Worm
+## 2. Model federat
 
-<!-- markdownlint-disable MD033 -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_pMF_3vDO4k?si=5BShYynR0Ez2niQq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<!-- markdownlint-enable MD033 -->
-
----
-
-## Exploits locals
-
-- Un exploit local requereix accés previ al sistema vulnerable
-- S'executa localment en l'equip
-- En general eleva els privilegis al nivell de l'administrador o de root per tal que l'exploit pugui tenir un control total del sistema
-  - També és possible usar diversos exploits, primer per a obtenir accés de baix nivell, i després escalar privilegis diverses vegades fins arribar a l'arrel (root) o a nivell d'administrador.
-- Alguns exploits també es poden distribuir localment a través de dispositius d'emmagatzematge USB
-- Per exemple: el cuc Conficker (o W32.Downadup), W32.Spybot, W32.Randex i W32.Mytob
-
----
-
-## Conficker Worm
-
-<!-- markdownlint-disable MD033 -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5FuQ9aRZL3E?si=UHIekCxYkN27cQJq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<!-- markdownlint-enable MD033 -->
-
----
-
-## Client Side
-
-- Els atacs Client Side busquen aprofitar-se de vulnerabilitats que típicament es troben en les **aplicacions client**, instal·lades en gran part de les estacions de treball
-  - Aplicacions d'ofimàtica, com Microsoft Office o Open Office, lectors de PDF, com Adobe Acrobat Reader, navegadors d'Internet, com Internet Explorer, Firefox, Chrome o Safari...
-- L'exploit està dins d'un arxiu amb un format suportat per alguna d'aquestes aplicacions i que arriba a la màquina objectiu per mitjans com email o USB
-- Es necessita que l'usuari obri l'arxiu, cliqui algun enllaç o realitzi alguna acció en concret.
+- S'afegeix un intermediari: el **proveïdor d'identitat** (_Identity Provider_, IDP)
+- Un sol compte a l'IDP ens permet iniciar sessió a tots els llocs que hi confien
+  - Cada un d'aquests llocs és una **part receptora** (_Relying Party_, RP)
+  - El conjunt de llocs que usen el mateix IDP és una **federació**
+- Protocols: **SAML**, **OAuth** i **OpenID Connect**
+- Exemples: _single sign-on_ (SSO) corporatiu, «Inicia sessió amb Google / Facebook / GitHub»
 
 ---v
 
-- Es tracta de programari maliciós que apareix com a fitxer o programari aparentment fiable
-  - Es tracta de fitxers amb un format conegut com ara ZIP, RAR, MPEG, MP3, JPG, etc., però que en realitat incorporen codi maliciós de forma intencionada
-- Per exemple: desbordament de memòria provocat en un fitxer JPEG que permet a atacants remots executar codi arbitrari a través d'una imatge JPEG
-  - CVE-2004-0200 (CVE = Common Vulnerabilities and Exposures)
-- Poden ser utilitzats en combinació amb el mètode d'**enginyeria social**
+## Problemes del model federat
+
+- No hi ha un IDP que funcioni a tot arreu: acabam tenint comptes a diversos IDP
+- L'IDP és un **intermediari** que pot vigilar la nostra activitat a tots els llocs
+- Els grans IDP són dels majors _honeypots_ per al cibercrim
+- Els comptes tampoc no són portables: si deixam l'IDP, perdem tots els accessos
+- No serveixen per compartir les dades més valuoses: passaport, dades de salut, dades financeres...
 
 ---
 
-## Social Engineering - How Bad Guys Hack Users
+## 3. Model descentralitzat
 
-<!-- markdownlint-disable MD033 -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uMkOphesrqI?si=RPJYUOWN8PIvjiFl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<!-- markdownlint-enable MD033 -->
+- Sorgeix el 2015, inspirat en la tecnologia blockchain
+- **Ja no es basa en comptes**: funciona com la identitat al món real
+- Relació directa entre **iguals** (_peer-to-peer_)
+  - Cap de les dues parts «proveeix», «controla» ni «posseeix» la relació
+  - No hi ha un compte, sinó una **connexió** compartida
+- Vàlid per a persones, organitzacions i coses
 
----
+---v
 
-## Malware vs Exploits: What's the Difference?
+## El paper de la criptografia
 
-<!-- markdownlint-disable MD033 -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/a9u8-rNCHUs?si=idB-mc2qgZRZFaM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<!-- markdownlint-enable MD033 -->
+- La base és la **criptografia de clau pública**
+- La blockchain no s'usa com a moneda, sinó com a **infraestructura de clau pública descentralitzada** (DPKI):
+  - **Intercanviar claus públiques** directament, per crear connexions privades i segures entre dos iguals
+  - **Publicar algunes claus públiques** per poder verificar les signatures de les **credencials verificables**
 
----
+---v
 
-## Tipus d'exploits
+## L'analogia de la cartera
 
-- Zero-day
-- Full disclosure
-- Responsible disclosure
-
----
-
-## Zero-day
-
-- Forat o vulnerabilitat en el programari que és desconegut per al fabricant o desenvolupador
-- Pot ser explotat pels hackers abans que el venedor ho descobreixi i creï un _patch_ per tal d'eliminar-ne la vulnerabilitat
-- Són els més perillosos
+- Demostram la identitat cada dia de la mateixa manera: treim la cartera i ensenyam credencials que ens ha emès algú de confiança
+- El model descentralitzat fa el mateix amb:
+  - **Carteres** digitals
+  - **Credencials** digitals
+  - **Connexions** digitals
 
 ---
 
-## Full disclosure
+## Comparació dels tres models
 
-- Full disclosure és la pràctica de publicar la informació de les vulnerabilitats al mateix moment que es descobreix, de forma que sigui accessible per a tothom
-  - Per tant, les víctimes potencials estan informades de com poden ser atacades i els fabricants poden desenvolupar el _patch_
-- També s'anomenen **exploits de dia 1**, ja que es coneix l'error però encara no hi ha un _patch_
-
----
-
-## Responsible disclosure
-
-- El fabricant descobreix o és informat de l'error però no es fa públic
-- Quan el fabricant té disponible el _patch_ i el posa a disposició dels clients és quan es dóna a conèixer i es fa públic
-- Sistema molt comú en les grans empreses de programari com Microsoft
-  - S'aplica el principi de no publicar res que pugui afectar la seguretat dels seus clients.
+| | Centralitzat | Federat | Descentralitzat |
+| --- | --- | --- | --- |
+| **Base** | Compte a cada lloc | Compte a un IDP | Connexió entre iguals |
+| **Qui controla** | L'organització | L'IDP | L'usuari |
+| **Portabilitat** | No | No | Sí |
+| **Intermediari** | No | Sí | No |
 
 ---
 
-## Punts de vista sobre seguretat del software
+## Per què «sobirana»?
 
-![Punts de vista](./img/blackhat_whitehat.png)
+- **Sobirà**: autònom, independent; que no depèn de cap altre poder
+- **Identitat sobirana**: la identitat d'una persona que no depèn de cap altre poder ni hi està sotmesa
+- El terme és potent, però també polèmic: ha alimentat dos mites
+
+---v
+
+## Dos mites sobre la SSI
+
+1. **«És identitat autoafirmada»**: fals
+   - La major part de la informació sobre la nostra identitat prové de **fonts de confiança**, igual que les credencials de la cartera física
+   - La identitat emesa pels governs **no competeix** amb la SSI: són complementàries
+2. **«És només per a persones»**: fals
+   - S'aplica igualment a organitzacions i coses: a **qualsevol entitat** que necessiti identitat a Internet
 
 ---
 
-## Black Hat vs. White Hat
+## Per què és important?
 
-- **Black Hat**: Perspectiva de l'atacant.
-  - Quins defectes constitueixen vulnerabilitats?
-  - Com s'exploten?
-- **White Hat**: Perspectiva del defensor.
-  - Com evitar defectes abans de desplegar-los?
-  - Com dificultar l'explotació de vulnerabilitats?
+- La SSI representa un **canvi de control**:
+  - Dels **centres de la xarxa** (emissors i verificadors)
+  - A les **vores de la xarxa** (els usuaris, que interactuen com a iguals)
+- Per això va més enllà de la tecnologia: té dimensions **empresarials, legals i socials**
+- El repte: que les diferents arquitectures SSI siguin **interoperables**, igual que Internet va fer interoperables les xarxes locals
+
+---
+
+## Què impulsa l'adopció?
+
+1. **Eficiència empresarial i experiència d'usuari**
+   - Seguretat, reducció de costos, compliment normatiu i comoditat
+   - És el principal motor en l'etapa inicial
+2. **Resistència a l'economia de la vigilància**
+   - Reacció al model de negoci basat en les dades personals
+   - Governs com la Unió Europea, amb el RGPD, lideren aquest moviment
+3. **Moviment de l'individu sobirà**
+   - Fer per a la identitat el que Bitcoin vol fer per als diners
+
+---v
+
+## Exemples per sectors
+
+- **Comerç electrònic**: registre i accés sense contrasenyes, avís si el lloc no pot acreditar qui és
+- **Banca i finances**: credencials per superar controls KYC i AML sense reomplir formularis
+- **Salut**: historial clínic a la cartera del pacient, consentiment verificable
+- **Viatges**: prova instantània de credencials amb un codi QR, revelant només les dades necessàries
+
+---
+
+## Els set blocs bàsics de la SSI
+
+1. Credencials verificables
+2. El triangle de confiança: emissors, titulars i verificadors
+3. Carteres digitals
+4. Agents digitals
+5. Identificadors descentralitzats (DID)
+6. Blockchains i altres registres de dades verificables
+7. Marcs de governança
+
+---
+
+## 1. Credencials verificables
+
+- **Credencial**: conjunt d'informació que una autoritat afirma que és certa sobre un subjecte
+  - Certificat de naixement, títol universitari, passaport, carnet de conduir...
+- Conté **afirmacions** (_claims_) sobre el subjecte:
+  - **Atributs**: edat, alçada...
+  - **Relacions**: progenitor, empleat, ciutadà...
+  - **Drets**: prestacions mèdiques, permisos...
+- No es limiten a persones: també poden descriure animals, productes o dispositius IoT
+
+---v
+
+## Què vol dir «verificable»?
+
+Un verificador ha de poder determinar:
+
+- **Qui** ha emès la credencial
+- Que **no ha estat alterada** des que es va emetre
+- Que **no ha caducat ni ha estat revocada**
+- Si escau, que qui la presenta n'és realment el **subjecte**
+
+Amb criptografia i un protocol estàndard, la verificació és digital i es fa en **segons o mil·lisegons**.
+
+---v
+
+## Estructura d'una credencial verificable
+
+Segons el model de dades de credencials verificables del W3C:
+
+1. **Identificador** únic de la credencial
+2. **Metadades**: per exemple, la data de caducitat
+3. **Afirmacions**: nom, data de naixement...
+4. **Signatura digital** de l'emissor
+
+---
+
+## 2. Emissors, titulars i verificadors
+
+- **Emissor** (_issuer_): origen de la credencial
+  - Governs, bancs, universitats, empreses... però també persones o coses
+- **Titular** (_holder_): demana credencials, les guarda a la cartera i en presenta **proves** quan un verificador ho sol·licita
+  - Sempre té l'opció de **no** presentar-les
+- **Verificador** (_verifier_): demana proves d'una o més afirmacions i comprova la signatura de l'emissor
+
+---v
+
+## El triangle de confiança
+
+- Les credencials només transmeten confiança si **el verificador confia en l'emissor**
+  - No cal que hi tengui una relació directa, comercial ni legal
+- El triangle descriu només **una banda** de la transacció
+  - En una mateixa transacció, les dues parts poden fer de titular i de verificador
+  - Moltes transaccions acaben amb l'emissió d'una **credencial nova**
+
+---
+
+## 3. Carteres digitals
+
+- Fan la mateixa feina que una cartera física:
+  - Guardar les credencials en un sol lloc
+  - Protegir-les de robatoris i mirades alienes
+  - Tenir-les sempre a mà, a tots els dispositius
+- Una cartera SSI hauria de:
+  - Implementar **estàndards oberts** i acceptar qualsevol credencial estandarditzada
+  - Poder-se instal·lar a qualsevol dispositiu
+  - Permetre **còpia de seguretat** i **migració** a carteres d'altres proveïdors
+  - Oferir la **mateixa experiència** amb independència del proveïdor
+
+---
+
+## 4. Agents digitals
+
+- Programari que **opera la cartera** en nom del seu propietari
+  - Garanteix que només el propietari pot usar les credencials i les claus
+- Els agents parlen entre ells per **crear connexions** i **intercanviar credencials**
+  - Mitjançant un protocol de missatgeria segur i descentralitzat (DIDComm)
+- Dos tipus segons on s'executen:
+  - **Agents de vora** (_edge agents_): als dispositius del titular
+  - **Agents al núvol** (_cloud agents_): allotjats per un proveïdor
+
+---
+
+## 5. Identificadors descentralitzats (DID)
+
+- Per verificar una signatura cal conèixer la **clau pública correcta** del signant
+- La solució tradicional és la **PKI**, amb autoritats de certificació: massa centralitzada i costosa per a una infraestructura on cada participant gestiona moltes claus
+- Un **DID** és un nou tipus d'identificador amb quatre propietats:
+  - **Permanent**: no canvia mai
+  - **Resoluble**: permet obtenir les claus públiques i l'adreça de l'agent
+  - **Verificable criptogràficament**: el titular pot demostrar que controla la clau privada
+  - **Descentralitzat**: sense autoritat central de registre
+
+---v
+
+## Mètodes DID
+
+- Cada **mètode DID** defineix com operar sobre una xarxa concreta:
+  - **Crear** el DID i el seu **document DID** (claus públiques i metadades)
+  - **Llegir** el document DID
+  - **Actualitzar-lo**, per exemple per rotar una clau
+  - **Desactivar** el DID
+- Alguns mètodes no necessiten cap registre distribuït: funcionen només entre iguals (per exemple, `did:peer`)
+
+---v
+
+## Connexions DID a DID
+
+- **Permanents**: només es trenquen si una de les parts ho vol
+- **Privades**: comunicació xifrada i signada
+- **D'extrem a extrem**: sense intermediaris
+- **De confiança**: permeten intercanviar credencials verificables
+- **Extensibles**: serveixen per a qualsevol aplicació que necessiti comunicació segura
+
+---
+
+## 6. Blockchains i registres de dades verificables
+
+- **Blockchain**: base de dades distribuïda, molt resistent a manipulacions, que **cap part controla**
+- Renuncia a rendiment i escalabilitat per resoldre un sol problema: dades fiables **sense autoritat central**
+- Triple ús de la criptografia:
+  1. Cada transacció està **signada digitalment**
+  2. Les transaccions s'agrupen en blocs **encadenats per _hash_**
+  3. Cada bloc es **replica** a tots els nodes mitjançant un protocol de consens
+- Per a la SSI: font de veritat per a DID i claus públiques sense punt únic de fallada
+  - El tipus concret de blockchain importa poc
+
+---
+
+## 7. Marcs de governança
+
+- La confiança criptogràfica no és **confiança humana**
+- Confiar en cada emissor d'un en un no escala
+  - El mateix problema que tenien les targetes de crèdit abans de xarxes com Visa i MasterCard
+- **Marc de governança** (_trust framework_): conjunt de regles de negoci, legals i tècniques
+  - L'administra una **autoritat de governança**
+  - Especifica quins emissors estan autoritzats i quines polítiques han de seguir
+- El verificador pot acceptar credencials d'un emissor que no coneix si està autoritzat per un marc en què confia
+
+---
+
+## Resum dels blocs
+
+| Bloc | Funció |
+| --- | --- |
+| **Credencials verificables** | Equivalent digital de les credencials físiques |
+| **Emissor, titular, verificador** | Els tres rols del triangle de confiança |
+| **Carteres digitals** | Guarden les credencials al dispositiu |
+| **Agents digitals** | Operen la cartera i es comuniquen amb altres agents |
+| **DID** | Adreces digitals sense autoritat central de registre |
+| **Registres de dades verificables** | Font de veritat per a DID i claus públiques |
+| **Marcs de governança** | Regles que fan interoperables els ecosistemes de confiança |
+
+---
+
+## Reptes per a l'adopció
+
+1. **Construir l'ecosistema**
+   - Els efectes de xarxa només arriben quan sectors i governs accepten les credencials dels altres
+   - Requereix interoperabilitat real entre carteres i credencials
+2. **Gestió descentralitzada de claus**
+   - Perdre les claus privades equival a perdre la identitat digital
+   - Històricament, el taló d'Aquil·les de la criptografia
+3. **Accés sense connexió**
+   - Cal poder demostrar la identitat sense accés a Internet
+
+---
+
+## Referències
+
+- A. Preukschat i D. Reed, _Self-Sovereign Identity: Decentralized digital identity and verifiable credentials_, Manning, 2021 (capítols 1 i 2)
+- K. Cameron, [_The Laws of Identity_](https://www.identityblog.com/?p=352), 2005
+- W3C, [_Verifiable Credentials Data Model_](https://www.w3.org/TR/vc-data-model/)
+- W3C, [_Decentralized Identifiers (DIDs)_](https://www.w3.org/TR/did-core/)
