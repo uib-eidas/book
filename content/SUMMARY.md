@@ -13,7 +13,7 @@
 - [🏛️ Arquitectura i actors](./eidas/04-architecture/page.md)
 - [🎫 Credencials](./eidas/05-credentials/page.md)
 - [🔄 Protocols](./eidas/06-protocols/page.md)
-- [🤝 Infraestructura de confiança]()
+- [🤝 Infraestructura de confiança](./eidas/07-trust/page.md)
 - [✍️ Serveis de confiança]()
 - [🔐 Privadesa i seguretat]()
 - [🚀 Implementació]()
