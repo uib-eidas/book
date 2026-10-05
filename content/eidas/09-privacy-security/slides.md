@@ -153,11 +153,7 @@ L'ARF 3.0 reconeix el límit i hi treballa, però encara no l'ha resolt.
 
 ## Tres tipus de pseudònim
 
-- **Verificable**: l'usuari demostra que el pseudònim és seu
-  - Com amb una _passkey_
-- **Acreditat**: un proveïdor de declaracions certifica que pertany a un usuari
-- **Limitat per àmbit**: garanteix un nombre màxim de pseudònims per usuari
-  - Per exemple, un de sol en una votació
+![Tres tipus de pseudònim: verificable, acreditat per un proveïdor de declaracions, i limitat per àmbit](./img/pseudonims.svg)
 
 ---
 

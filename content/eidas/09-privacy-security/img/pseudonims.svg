@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle">
+  <defs>
+    <marker id="fletxa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#0065bd"/>
+    </marker>
+    <marker id="fletxa-conf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#b3541e"/>
+    </marker>
+  </defs>
+  <rect width="960" height="330" fill="#ffffff"/>
+
+  <g fill="#f6f9fc" stroke="#0065bd" stroke-width="3">
+    <rect x="30" y="20" width="280" height="290" rx="14"/>
+    <rect x="340" y="20" width="280" height="290" rx="14"/>
+    <rect x="650" y="20" width="280" height="290" rx="14"/>
+  </g>
+  <g font-weight="bold" font-size="20" fill="#0065bd">
+    <text x="170" y="52">Verificable</text>
+    <text x="480" y="52">Acreditat</text>
+    <text x="790" y="52">Limitat per àmbit</text>
+  </g>
+
+  <!-- fletxes usuari -> part usuària -->
+  <g stroke="#0065bd" stroke-width="3" marker-end="url(#fletxa)">
+    <line x1="152" y1="168" x2="186" y2="168"/>
+    <line x1="462" y1="168" x2="496" y2="168"/>
+    <line x1="772" y1="168" x2="806" y2="168"/>
+  </g>
+  <line x1="480" y1="112" x2="424" y2="146" stroke="#b3541e" stroke-width="3" marker-end="url(#fletxa-conf)"/>
+
+  <g fill="#e8f1fa" stroke="#0065bd" stroke-width="3">
+    <rect x="50" y="150" width="100" height="36" rx="8"/>
+    <rect x="190" y="150" width="100" height="36" rx="8"/>
+    <rect x="360" y="150" width="100" height="36" rx="8"/>
+    <rect x="500" y="150" width="100" height="36" rx="8"/>
+    <rect x="670" y="150" width="100" height="36" rx="8"/>
+    <rect x="810" y="150" width="100" height="36" rx="8"/>
+  </g>
+  <rect x="420" y="76" width="120" height="36" rx="8" fill="#fff4e0" stroke="#b3541e" stroke-width="3"/>
+
+  <g fill="#1a1a1a" font-size="14" font-weight="bold">
+    <text x="100" y="173">Usuari</text>
+    <text x="240" y="173">Part usuària</text>
+    <text x="410" y="173">Usuari</text>
+    <text x="550" y="173">Part usuària</text>
+    <text x="720" y="173">Usuari</text>
+    <text x="860" y="173">Àmbit</text>
+    <text x="480" y="99">Proveïdor</text>
+  </g>
+
+  <g fill="#444444" font-size="14">
+    <text x="170" y="100">Com una passkey</text>
+    <text x="790" y="100">Per exemple, una votació</text>
+  </g>
+
+  <g fill="#1a1a1a">
+    <text x="170" y="232">L'usuari demostra que</text>
+    <text x="170" y="254">el pseudònim és seu</text>
+    <text x="480" y="232">Un proveïdor de declaracions</text>
+    <text x="480" y="254">certifica de qui és</text>
+    <text x="790" y="232">Un nombre màxim de</text>
+    <text x="790" y="254">pseudònims per usuari</text>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 390" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle">
+  <rect width="960" height="390" fill="#ffffff"/>
+
+  <g font-weight="bold" font-size="22" fill="#0065bd">
+    <text x="250" y="38">mdoc</text>
+    <text x="710" y="38">SD-JWT VC</text>
+  </g>
+  <g fill="#444444">
+    <text x="250" y="60">ISO/IEC 18013-5 · CBOR</text>
+    <text x="710" y="60">IETF · JSON</text>
+  </g>
+
+  <g fill="#fff4e0" stroke="#b3541e" stroke-width="3">
+    <rect x="60" y="80" width="380" height="74" rx="10"/>
+    <rect x="520" y="80" width="380" height="74" rx="10"/>
+  </g>
+  <g fill="#e8f1fa" stroke="#0065bd" stroke-width="3">
+    <rect x="60" y="172" width="380" height="74" rx="10"/>
+    <rect x="520" y="172" width="380" height="74" rx="10"/>
+  </g>
+  <g fill="#f6f9fc" stroke="#0065bd" stroke-width="3">
+    <rect x="60" y="264" width="380" height="74" rx="10"/>
+    <rect x="520" y="264" width="380" height="74" rx="10"/>
+  </g>
+
+  <g font-weight="bold" font-size="18" fill="#1a1a1a">
+    <text x="250" y="110">Objecte de seguretat (MSO)</text>
+    <text x="710" y="110">JWT de l'emissor</text>
+    <text x="250" y="202">Elements de dades</text>
+    <text x="710" y="202">Divulgacions</text>
+    <text x="250" y="294">Autenticació del dispositiu</text>
+    <text x="710" y="294">Prova de possessió</text>
+  </g>
+  <g fill="#1a1a1a">
+    <text x="250" y="134">Hashes dels atributs, signats per l'emissor</text>
+    <text x="710" y="134">Hashes dels atributs, signats per l'emissor</text>
+    <text x="250" y="226">Sal, nom i valor de cada atribut</text>
+    <text x="710" y="226">Sal, nom i valor de cada atribut</text>
+    <text x="250" y="318">Signatura amb la clau del dispositiu</text>
+    <text x="710" y="318">Signatura amb la clau del dispositiu</text>
+  </g>
+
+  <g font-size="26" fill="#888888">
+    <text x="480" y="126">=</text>
+    <text x="480" y="218">=</text>
+    <text x="480" y="310">=</text>
+  </g>
+
+  <text x="480" y="374" fill="#444444">Dos formats, el mateix patró: una llista de hashes signada, i els atributs a part.</text>
+</svg>

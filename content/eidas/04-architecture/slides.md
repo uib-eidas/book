@@ -71,6 +71,12 @@ Una mateixa entitat pot exercir **més d'un rol**, si compleix els requisits de 
 
 ## On viuen les claus
 
+![Quatre arquitectures de WSCD: local natiu i local intern dins el dispositiu, local extern en una targeta, i remot al servidor del proveïdor](./img/wscd.svg)
+
+---v
+
+## Quatre tipus de WSCD
+
 | Tipus de WSCD | On és | Exemple |
 | --- | --- | --- |
 | **Remot** | Servidor del proveïdor | HSM |

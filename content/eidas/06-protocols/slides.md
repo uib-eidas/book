@@ -170,6 +170,12 @@ Tots dos serveixen per als dos fluxos remots:
 
 ---v
 
+## Mateix dispositiu o entre dispositius
+
+![Dos fluxos remots: en un mateix mòbil amb navegador i cartera, o entre un ordinador que mostra un codi QR i el mòbil amb la cartera](./img/fluxos-remots.svg)
+
+---v
+
 ## Problemes dels URI personalitzats
 
 - **Fluxos entre dispositius**: vulnerables a atacs de _phishing_ i de retransmissió

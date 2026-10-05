@@ -81,6 +81,12 @@ La diferència és **purament legal**, no tècnica:
 
 ---v
 
+## Dos formats, un mateix patró
+
+![Comparació de l'estructura de mdoc i SD-JWT VC: una llista de hashes signada, els atributs amb sal a part, i una signatura amb la clau del dispositiu](./img/formats.svg)
+
+---v
+
 ## mdoc
 
 - Neix com a estàndard del **permís de conduir mòbil** (mDL)
