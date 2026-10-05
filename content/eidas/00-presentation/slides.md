@@ -2,125 +2,91 @@
 
 ---
 
-## Informació de l'assignatura
+## Què és aquesta documentació?
 
-- **Nom**: Seguretat del Software
-- **Titulació**: 613 - GTT2 - Grau d'Enginyeria Telemàtica (Pla 2020)
-- **Codi**: 22660
-- **Tipus**: Optativa
-- **Crèdits**: 6.0
-- **Curs**: 4t
-- **Semestre**: Segon semestre
-- **Professorat**: Miquel A. Cabot
+- Una guia per entendre **com funciona eIDAS 2.0**, el marc europeu d'identitat digital
+- Explica el model, els actors, les credencials i els protocols, des dels conceptes fins a la implementació
+- Cada tema es pot llegir com a **pàgina del llibre** o veure com a **presentació**
+
+---
+
+## Què és eIDAS 2.0?
+
+- És el nom amb què es coneix el **Reglament (UE) 2024/1183**, en vigor des de maig de 2024
+  - Modifica el reglament eIDAS original, el Reglament (UE) 910/2014
+- Estableix el **marc europeu d'identitat digital**
+- La peça central és la **cartera europea d'identitat digital** (_EUDI Wallet_)
+  - Una aplicació on cada persona guarda i presenta les seves credencials
+  - D'ús **voluntari** i **gratuït** per a les persones físiques
+
+---
+
+## Què aprendràs
+
+- Quin model d'identitat hi ha al darrere: la **identitat digital sobirana** (SSI)
+- Què diu el **marc legal** i com s'ha arribat fins aquí
+- Quins **actors** hi participen i quin paper té cadascun
+- Com són les **credencials** i en quins formats s'expressen
+- Amb quins **protocols** s'emeten i es presenten
+- D'on surt la **confiança** entre les parts
+- Quines garanties i quins riscos hi ha per a la **privadesa**
+
+---
+
+## A qui s'adreça
+
+- A persones amb **perfil tècnic** que volen entendre eIDAS 2.0 per dins
+- Coneixements previs recomanats:
+  - Criptografia de clau pública i signatura digital
+  - Funcionament bàsic del web: HTTP, JSON, autenticació
+- No calen coneixements jurídics: el marc legal s'explica des de zero
 
 ---
 
 ## Temes
 
-1. Introducció a la seguretat del software
-2. Git i GitHub. Sistemes de control de versions
-3. Llenguatge de marques Markdown
-4. Metodologia Scrum
-5. Llenguatge C i vulnerabilitats de baix nivell
-6. Defensa contra exploits de baix nivell
-7. Programació en Rust
-8. Desenvolupament segur de software
-9. Revisió del codi: testing i anàlisi
-10. Proves de penetració (Pentesting)
-
----
-
-![Temes](./img/topics.png)
-
----
-
-## Continguts
-
-### 🔥 Atacs de baix nivell
-
-- Trencament de la pila
-- Atacs de cadenes de format
-- Accés a la memòria obsoleta
-- Programació orientada al retorn (ROP)
-
-### 🛡️ Defenses contra atacs basats en memòria
-
-- _Stack canaries_
-- Dades no executables (W+X o DEP)
-- Aleatorització de disseny d'espai d'adreces (ASLR)
-- Aplicació de seguretat de memòria (p. ex., SoftBound)
-- Integritat del flux de control (CFI)
+1. Introducció a la identitat digital sobirana (SSI)
+2. D'eIDAS a eIDAS 2.0
+3. De la SSI a la EUDI Wallet
+4. Arquitectura i actors
+5. Credencials
+6. Protocols
+7. Infraestructura de confiança
+8. Serveis de confiança
+9. Privadesa i seguretat
+10. Implementació
 
 ---v
 
-### 🏗️ Disseny segur
+## Recorregut
 
-- Modelatge d'amenaces
-- Principis de disseny de seguretat:
-  - Simplicitat
-  - Confiar amb reticència (_trust with reluctance_)
-  - Defensar en profunditat (_defend in depth_)
-- Exemples reals de dissenys bons i dolents
+- **Fonaments** (temes 1 a 3)
+  - El model d'identitat, el marc legal i el pont entre tots dos
+- **Nucli tècnic** (temes 4 a 7)
+  - Qui hi participa, què s'intercanvia, com s'intercanvia i per què ens en podem fiar
+- **Aprofundiment** (temes 8 a 10)
+  - Serveis de confiança, privadesa i posada en pràctica
 
-### 🧪 Revisió de codi automatitzada
-
-- Anàlisi estàtica
-- Execució simbòlica
-- Proves de fuzz de caixa blanca
-
-### 🎯 Proves de penetració i fuzzing
-
-- Objectius, tècniques i eines
+> Aquesta documentació està en elaboració: ara mateix només hi ha disponible el tema 1.
 
 ---
 
-## Avaluació
+## Com utilitzar el material
 
-- **Activitats pràctiques**: 60% de la nota fina
-  - Pràctica 1: Temes 1 a 4
-  - Pràctica 2: Temes 5 a 6
-  - Pràctica 3: Tema 7
-  - Pràctica 4: Temes 7 a 8
-  - Pràctica 5: Temes 9 a 10
-- **Exàmens escrits**: 40% de la nota final
-  - Exàmen 1r parcial: Temes 1 a 6
-  - Exàmen 2n parcial: Temes 7 a 10
-- **Exàmen de recuperació**
+- A cada tema, l'enllaç **«Obrir la presentació»** mostra les diapositives a pantalla completa
+- Dins la presentació:
+  - Fletxes **esquerra** i **dreta**: canviar de secció
+  - Fletxes **amunt** i **avall**: avançar dins d'una secció
+  - Tecla **Esc**: vista general de totes les diapositives
+- Dins el llibre, la icona de la lupa permet **cercar** a tots els temes
 
 ---
 
-## Programació en Rust
+## Fonts
 
-- Algunes pràctiques es faran utilitzant el llenguatge Rust
-- **Llibre recomanat**:
-  - [The Rust Programming Language](https://doc.rust-lang.org/book/), Steve Klabnik i Carol Nichols
-
-![The Rust Programming Language](./img/rust_book.png)
-
----
-
-## Llibres recomanats per aquesta assignatura
-
-- _Designing Secure Software: A Guide for Developers_, Loren Kohnfelder
-- _Writing Secure Code_, David LeBlanc i Michael Howard
-- _Penetration Testing: A Hands-On Introduction to Hacking_, Georgia Weidman
-
-![Llibres per assignatura](./img/books1.png)
-
----
-
-## Llibres imprescindibles per a programadors
-
-- _Code Complete: A Practical Handbook of Software Construction, Second Edition_, Steve McConnell
-- _The Pragmatic Programmer: Your Journey to Mastery_, David Thomas i Andrew Hunt
-- _Clean Code: A Handbook of Agile Software Craftsmanship_, Robert C. Martin
-
-![Llibres per programadors](./img/books2.png)
-
----
-
-## 🔗 Enllaços d'interès
-
-- [Informació de l'assignatura](https://estudis.uib.cat/estudis-de-grau/grau/telematica/GTT2-P/22660/index.html)
-- [Cronograma](https://academic.uib.es/pds/consultaPublica/look[conpub]InicioPubHora?entradaPublica=true&lock=true&idiomaPais=ca.ES&planDocente=2024&centro=9399&estudio=331&planEstudio=613&curso=4&trimestre=S/2&asignatura22660=22660&&grupo0=4&consultarAsignaturaGrupoPrivada=S)
-- [Guia docent](https://academic.uib.es/doa/consultaPublica/look%5bconpub%5dMostrarPubGuiaDocAs?entradaPublica=true&idiomaPais=ca.ES&_anoAcademico=2024&_codAsignatura=22660)
+- Sempre que és possible, **fonts primàries i públiques**:
+  - El text del reglament i els seus actes d'execució
+  - L'_Architecture and Reference Framework_ (ARF) de la cartera
+  - Les especificacions tècniques (OpenID, IETF, W3C, ETSI)
+- La llista completa és a la pàgina **Recursos** del llibre
+- L'ARF i els actes d'execució evolucionen: convé comprovar-ne sempre la versió vigent
