@@ -204,7 +204,7 @@ script = "mlc content/ --ignore-links '*slides.md,*slides.html,*twitter.com*,*se
 
 [tasks.links-for]
 category = "Checks"
-description = "Check links for specific file(s). Example: `makers links-for ./content/contribute/**/*.md`"
+description = "Check links for specific file(s). Example: `makers links-for ./content/eidas/**/*.md`"
 # FIXME .mlc.toml config not working... https://github.com/becheran/mlc/issues/78
 script = "mlc ${@} --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,'"
 
