@@ -129,16 +129,6 @@
 
 ---
 
-## Per què és important?
-
-- La SSI representa un **canvi de control**:
-  - Dels **centres de la xarxa** (emissors i verificadors)
-  - A les **vores de la xarxa** (els usuaris, que interactuen com a iguals)
-- Per això va més enllà de la tecnologia: té dimensions **empresarials, legals i socials**
-- El repte: que les diferents arquitectures SSI siguin **interoperables**, igual que Internet va fer interoperables les xarxes locals
-
----
-
 ## Què impulsa l'adopció?
 
 1. **Eficiència empresarial i experiència d'usuari**
