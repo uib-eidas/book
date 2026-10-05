@@ -28,13 +28,12 @@ La resposta es construeix amb **certificats X.509** i **llistes signades** per u
 
 | | Llistes de confiança | Llistes d'entitats de confiança (LoTE) |
 | --- | --- | --- |
-| **Per a qui** | Prestadors qualificats, com els proveïdors de QEAA | Proveïdors de cartera, de PID i de Pub-EAA; autoritats de certificats |
+| **Per a qui** | Prestadors qualificats | Proveïdors de cartera, de PID i de Pub-EAA, entre d'altres |
 | **Qui les signa** | Cada estat membre | La Comissió |
 | **Estàndard** | ETSI TS 119 612 | ETSI TS 119 602 |
 
 - Les **parts usuàries** no figuren en cap llista
-- Una entitat no s'esborra mai d'una llista: el seu estat passa a **invàlid**
-- Per a les declaracions **no qualificades**, el llibre de regles ha de dir on trobar l'àncora
+- Una entitat no se n'esborra mai: passa a estat **invàlid**
 
 ---
 
@@ -84,14 +83,14 @@ La resposta es construeix amb **certificats X.509** i **llistes signades** per u
 ## I com en surt
 
 - **Proveïdor de cartera invalidat**
-  - Els emissors deixen de fiar-se de les seves acreditacions i no emeten res a les seves carteres
-  - El proveïdor revoca les unitats de cartera
-- **Emissor suspès o cancel·lat**
-  - Se li revoquen els certificats d'accés: ja no pot emetre
-  - El seu estat a la llista passa a invàlid: les parts usuàries deixen d'acceptar les seves declaracions
+  - Els emissors deixen d'emetre a les seves carteres
+  - Ha de revocar les unitats de cartera
+- **Emissor suspès**
+  - Perd els certificats d'accés: ja no pot emetre
+  - Passa a invàlid a la llista: les seves declaracions deixen d'acceptar-se
   - Ha de revocar les declaracions emeses
-- **Part usuària suspesa o cancel·lada**
-  - Se li revoquen els certificats d'accés i de registre: ja no pot demanar dades
+- **Part usuària suspesa**
+  - Perd els certificats d'accés i de registre: ja no pot demanar dades
 
 ---
 
@@ -126,13 +125,12 @@ La resposta es construeix amb **certificats X.509** i **llistes signades** per u
 ## Demana més del que va declarar?
 
 1. La petició inclou el **certificat de registre** de l'ús previst
-2. La cartera en verifica la signatura, que no ha caducat i que no ha estat revocat
-3. Comprova que pertany a la **mateixa entitat** que el certificat d'accés
+2. La cartera en verifica la signatura, la vigència i la revocació
+3. Comprova que és de la **mateixa entitat** que el certificat d'accés
 4. **Compara** els atributs demanats amb els registrats
 5. Si en demana de més, **avisa** l'usuari
 
-- L'aprovació de l'usuari ha de ser sempre **explícita**
-- Aquesta verificació encara no és obligatòria: té un període transitori
+L'aprovació ha de ser sempre **explícita**. Aquesta verificació encara té un període transitori.
 
 ---
 
@@ -172,13 +170,13 @@ Si el banc demanés també l'adreça, la cartera avisaria la Maria que no l'havi
 
 ## La part usuària verifica una declaració
 
-- Verifica la **signatura** del proveïdor amb la seva àncora de confiança
-  - PID i Pub-EAA: l'àncora és a la LoTE
-  - QEAA: l'àncora és a la llista de confiança
+- Verifica la **signatura** del proveïdor amb la seva àncora:
+  - PID i Pub-EAA: a la LoTE
+  - QEAA: a la llista de confiança
   - EAA: on digui el llibre de regles
-- Ha de saber quina **categoria** de declaració demana, i guardar les àncores separades per categoria
-- Ha de **gestionar les àncores**: descarregar les llistes periòdicament i retirar les entitats invalidades
-- Pot comprovar que l'emissor està **registrat** per a aquell tipus de declaració
+- Ha de saber quina **categoria** demana, i guardar les àncores per separat
+- Ha de **mantenir les àncores al dia**: descarregar les llistes i retirar les entitats invalidades
+- Pot comprovar que l'emissor està **registrat** per a aquell tipus
 
 ---
 

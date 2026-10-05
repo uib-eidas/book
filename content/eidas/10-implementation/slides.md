@@ -70,13 +70,13 @@ Són els mateixos protocols i mecanismes dels temes 5, 6 i 7.
 
 ## Com començar a provar-la
 
-1. Llegir la descripció del projecte i el **mapa de funcionalitats** a la documentació
-2. Clonar el repositori de l'aplicació d'Android o d'iOS i seguir-ne la **guia d'inici ràpid**
+1. Llegir el **mapa de funcionalitats** a la documentació
+2. Clonar l'aplicació d'Android o d'iOS i seguir-ne la **guia d'inici ràpid**
 3. Emetre un **PID de prova** amb l'emissor de referència
-4. Presentar-lo al **verificador web** de referència
-5. Mirar el codi de les biblioteques per veure com s'implementa cada protocol
+4. Presentar-lo al **verificador web**
+5. Llegir el codi de les biblioteques de cada protocol
 
-És la manera més directa de fixar el que s'ha vist als temes de credencials i protocols.
+És la manera més directa de fixar els temes de credencials i protocols.
 
 ---
 

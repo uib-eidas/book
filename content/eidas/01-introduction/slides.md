@@ -336,14 +336,13 @@ Segons el model de dades de credencials verificables del W3C:
 
 ## 6. Blockchains i registres de dades verificables
 
-- **Blockchain**: base de dades distribuïda, molt resistent a manipulacions, que **cap part controla**
-- Renuncia a rendiment i escalabilitat per resoldre un sol problema: dades fiables **sense autoritat central**
+- **Blockchain**: base de dades distribuïda, resistent a manipulacions, que **cap part controla**
+- Resol un sol problema: dades fiables **sense autoritat central**
 - Triple ús de la criptografia:
-  1. Cada transacció està **signada digitalment**
-  2. Les transaccions s'agrupen en blocs **encadenats per _hash_**
-  3. Cada bloc es **replica** a tots els nodes mitjançant un protocol de consens
-- Per a la SSI: font de veritat per a DID i claus públiques sense punt únic de fallada
-  - El tipus concret de blockchain importa poc
+  1. Transaccions **signades digitalment**
+  2. Blocs **encadenats per _hash_**
+  3. Blocs **replicats** a tots els nodes per consens
+- Per a la SSI: font de veritat per a DID i claus públiques
 
 ---
 
@@ -351,11 +350,11 @@ Segons el model de dades de credencials verificables del W3C:
 
 - La confiança criptogràfica no és **confiança humana**
 - Confiar en cada emissor d'un en un no escala
-  - El mateix problema que tenien les targetes de crèdit abans de xarxes com Visa i MasterCard
-- **Marc de governança** (_trust framework_): conjunt de regles de negoci, legals i tècniques
+  - Com les targetes de crèdit abans de Visa i MasterCard
+- **Marc de governança** (_trust framework_): regles de negoci, legals i tècniques
   - L'administra una **autoritat de governança**
-  - Especifica quins emissors estan autoritzats i quines polítiques han de seguir
-- El verificador pot acceptar credencials d'un emissor que no coneix si està autoritzat per un marc en què confia
+  - Diu quins emissors estan autoritzats
+- El verificador pot acceptar un emissor que no coneix, si l'autoritza un marc en què confia
 
 ---v
 

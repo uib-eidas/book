@@ -60,13 +60,12 @@ Una mateixa entitat pot exercir **més d'un rol**, si compleix els requisits de 
 
 ## Components
 
-- **Dispositiu de l'usuari**: maquinari i sistema operatiu on s'executa la cartera
+- **Dispositiu de l'usuari**: maquinari i sistema operatiu
 - **Instància de la cartera**: l'aplicació, amb la lògica i les interfícies
-- **WSCD** (_Wallet Secure Cryptographic Device_): dispositiu resistent a manipulacions que custodia les claus i executa les operacions criptogràfiques
-- **WSCA** (_Wallet Secure Cryptographic Application_): l'aplicació que gestiona les claus dins el WSCD
-- **Magatzem de claus** (opcional): per a claus no crítiques
-  - No pot guardar les claus del PID
-- **Servidor del proveïdor de la cartera**: suport, manteniment i acreditació de la unitat
+- **WSCD** (_Wallet Secure Cryptographic Device_): dispositiu resistent a manipulacions que custodia les claus
+- **WSCA** (_Wallet Secure Cryptographic Application_): gestiona les claus dins el WSCD
+- **Magatzem de claus** (opcional): per a claus no crítiques, mai les del PID
+- **Servidor del proveïdor**: suport, manteniment i acreditació
 
 ---v
 
