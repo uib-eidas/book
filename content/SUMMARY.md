@@ -12,7 +12,7 @@
 - [🌉 De la SSI a la EUDI Wallet](./eidas/03-ssi-eudi-wallet/page.md)
 - [🏛️ Arquitectura i actors](./eidas/04-architecture/page.md)
 - [🎫 Credencials](./eidas/05-credentials/page.md)
-- [🔄 Protocols]()
+- [🔄 Protocols](./eidas/06-protocols/page.md)
 - [🤝 Infraestructura de confiança]()
 - [✍️ Serveis de confiança]()
 - [🔐 Privadesa i seguretat]()
