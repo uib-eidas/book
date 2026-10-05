@@ -45,7 +45,7 @@
 
 ## Biblioteques
 
-- **Nucli de la cartera**: `eudi-lib-android-wallet-core` i `eudi-lib-ios-wallet-kit`
+- **Nucli de la cartera**: una biblioteca per a Android i una per a iOS
 - **Emissió**: OpenID4VCI, per a Kotlin i per a Swift
 - **Presentació remota**: OpenID4VP, per a Kotlin i per a Swift
 - **Formats**: SD-JWT i model de dades d'ISO/IEC 18013-5
