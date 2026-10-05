@@ -14,7 +14,7 @@
 - [🎫 Credencials](./eidas/05-credentials/page.md)
 - [🔄 Protocols](./eidas/06-protocols/page.md)
 - [🤝 Infraestructura de confiança](./eidas/07-trust/page.md)
-- [✍️ Serveis de confiança]()
+- [✍️ Serveis de confiança](./eidas/08-trust-services/page.md)
 - [🔐 Privadesa i seguretat]()
 - [🚀 Implementació]()
 

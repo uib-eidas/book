@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle">
+  <defs>
+    <marker id="fletxa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#0065bd"/>
+    </marker>
+  </defs>
+  <rect width="960" height="340" fill="#ffffff"/>
+
+  <g stroke="#0065bd" stroke-width="3" marker-end="url(#fletxa)">
+    <line x1="282" y1="150" x2="416" y2="92"/>
+    <line x1="282" y1="190" x2="416" y2="248"/>
+  </g>
+
+  <g fill="#e8f1fa" stroke="#0065bd" stroke-width="3">
+    <rect x="60" y="130" width="220" height="80" rx="10"/>
+    <rect x="420" y="40" width="480" height="100" rx="10"/>
+    <rect x="420" y="200" width="480" height="100" rx="10"/>
+  </g>
+
+  <g font-weight="bold" font-size="19" fill="#1a1a1a">
+    <text x="170" y="164">Unitat de cartera</text>
+    <text x="660" y="74">Dispositiu qualificat local</text>
+    <text x="660" y="234">Dispositiu qualificat remot</text>
+  </g>
+  <g fill="#1a1a1a">
+    <text x="170" y="188">L'usuari aprova i signa</text>
+    <text x="660" y="100">Al dispositiu de l'usuari o en una targeta,</text>
+    <text x="660" y="120">certificat com a dispositiu de creació de signatura</text>
+    <text x="660" y="260">El gestiona un prestador qualificat de serveis</text>
+    <text x="660" y="280">de confiança, en nom del signant</text>
+  </g>
+  <g fill="#0065bd" font-weight="bold">
+    <text x="336" y="104">Local</text>
+    <text x="336" y="246">Remota</text>
+  </g>
+</svg>

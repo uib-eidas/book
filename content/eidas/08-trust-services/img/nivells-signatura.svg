@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle">
+  <rect width="960" height="330" fill="#ffffff"/>
+
+  <rect x="260" y="30" width="440" height="80" rx="10" fill="#fff4e0" stroke="#b3541e" stroke-width="3"/>
+  <rect x="160" y="125" width="640" height="80" rx="10" fill="#e8f1fa" stroke="#0065bd" stroke-width="3"/>
+  <rect x="60" y="220" width="840" height="80" rx="10" fill="#f6f9fc" stroke="#0065bd" stroke-width="3"/>
+
+  <g font-weight="bold" font-size="19" fill="#1a1a1a">
+    <text x="480" y="62">Signatura electrònica qualificada</text>
+    <text x="480" y="157">Signatura electrònica avançada</text>
+    <text x="480" y="252">Signatura electrònica</text>
+  </g>
+  <g fill="#1a1a1a">
+    <text x="480" y="90">Avançada + dispositiu qualificat + certificat qualificat</text>
+    <text x="480" y="185">Vinculada al signant, sota el seu control, i detecta qualsevol canvi</text>
+    <text x="480" y="280">Dades en format electrònic que el signant fa servir per signar</text>
+  </g>
+</svg>
