@@ -15,7 +15,7 @@
 - [🔄 Protocols](./eidas/06-protocols/page.md)
 - [🤝 Infraestructura de confiança](./eidas/07-trust/page.md)
 - [✍️ Serveis de confiança](./eidas/08-trust-services/page.md)
-- [🔐 Privadesa i seguretat]()
+- [🔐 Privadesa i seguretat](./eidas/09-privacy-security/page.md)
 - [🚀 Implementació]()
 
 ---
