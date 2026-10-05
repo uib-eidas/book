@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle">
+  <rect width="960" height="300" fill="#ffffff"/>
+  <line x1="40" y1="150" x2="920" y2="150" stroke="#c9d6e2" stroke-width="6" stroke-linecap="round"/>
+
+  <g stroke="#0065bd" stroke-width="2">
+    <line x1="80" y1="124" x2="80" y2="150"/>
+    <line x1="210" y1="150" x2="210" y2="176"/>
+    <line x1="340" y1="124" x2="340" y2="150"/>
+    <line x1="480" y1="150" x2="480" y2="176"/>
+    <line x1="610" y1="124" x2="610" y2="150"/>
+  </g>
+  <g stroke="#b3541e" stroke-width="2">
+    <line x1="750" y1="150" x2="750" y2="176"/>
+    <line x1="880" y1="124" x2="880" y2="150"/>
+  </g>
+
+  <g fill="#0065bd">
+    <circle cx="80" cy="150" r="9"/>
+    <circle cx="210" cy="150" r="9"/>
+    <circle cx="340" cy="150" r="9"/>
+    <circle cx="480" cy="150" r="9"/>
+    <circle cx="610" cy="150" r="9"/>
+  </g>
+  <g fill="#ffffff" stroke="#b3541e" stroke-width="4">
+    <circle cx="750" cy="150" r="8"/>
+    <circle cx="880" cy="150" r="8"/>
+  </g>
+
+  <g font-weight="bold" font-size="18" fill="#0065bd">
+    <text x="80" y="116">2014</text>
+    <text x="210" y="196">2016</text>
+    <text x="340" y="116">2021</text>
+    <text x="480" y="196">Maig 2024</text>
+    <text x="610" y="116">Des. 2024</text>
+  </g>
+  <g font-weight="bold" font-size="18" fill="#b3541e">
+    <text x="750" y="196">Finals 2026</text>
+    <text x="880" y="116">Finals 2027</text>
+  </g>
+
+  <g fill="#1a1a1a">
+    <text x="80" y="72">Reglament eIDAS</text>
+    <text x="80" y="91">(910/2014)</text>
+    <text x="210" y="218">eIDAS comença</text>
+    <text x="210" y="237">a aplicar-se</text>
+    <text x="340" y="72">Proposta de revisió</text>
+    <text x="340" y="91">de la Comissió</text>
+    <text x="480" y="218">eIDAS 2.0</text>
+    <text x="480" y="237">entra en vigor</text>
+    <text x="610" y="72">Primers actes</text>
+    <text x="610" y="91">d'execució</text>
+    <text x="750" y="218">Cada estat ofereix</text>
+    <text x="750" y="237">almenys una cartera</text>
+    <text x="880" y="72">Acceptació pel</text>
+    <text x="880" y="91">sector privat obligat</text>
+  </g>
+
+  <g font-size="14" text-anchor="start" fill="#444444">
+    <circle cx="52" cy="278" r="6" fill="#0065bd"/>
+    <text x="66" y="283">Fita</text>
+    <circle cx="132" cy="278" r="5" fill="#ffffff" stroke="#b3541e" stroke-width="3"/>
+    <text x="146" y="283">Termini</text>
+  </g>
+</svg>

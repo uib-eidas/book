@@ -8,12 +8,12 @@ Fonts utilitzades per elaborar aquesta documentació. Gairebé totes són fonts 
 - [Reglament (UE) 910/2014](https://eur-lex.europa.eu/eli/reg/2014/910/oj): reglament eIDAS original
 - [Reglament (UE) 2016/679](https://eur-lex.europa.eu/eli/reg/2016/679/oj): Reglament General de Protecció de Dades (RGPD)
 - Actes d'execució de la cartera europea d'identitat digital:
-  - [Reglament d'execució (UE) 2024/2977](https://eur-lex.europa.eu/eli/reg_impl/2024/2977/oj): dades d'identificació personal (PID) i atestacions electròniques d'atributs (EAA)
+  - [Reglament d'execució (UE) 2024/2977](https://eur-lex.europa.eu/eli/reg_impl/2024/2977/oj): dades d'identificació de la persona (PID) i declaracions electròniques d'atributs (EAA)
   - [Reglament d'execució (UE) 2024/2979](https://eur-lex.europa.eu/eli/reg_impl/2024/2979/oj): integritat i funcionalitats bàsiques
   - [Reglament d'execució (UE) 2024/2980](https://eur-lex.europa.eu/eli/reg_impl/2024/2980/oj): notificacions a la Comissió
   - [Reglament d'execució (UE) 2024/2981](https://eur-lex.europa.eu/eli/reg_impl/2024/2981/oj): certificació de les carteres
   - [Reglament d'execució (UE) 2024/2982](https://eur-lex.europa.eu/eli/reg_impl/2024/2982/oj): protocols i interfícies
-  - [Reglament d'execució (UE) 2025/848](https://eur-lex.europa.eu/eli/reg_impl/2025/848/oj): registre de les parts receptores
+  - [Reglament d'execució (UE) 2025/848](https://eur-lex.europa.eu/eli/reg_impl/2025/848/oj): registre de les parts usuàries
 
 ## 🏛️ Arquitectura i implementació de referència
 

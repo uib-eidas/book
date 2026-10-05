@@ -8,7 +8,7 @@
 ---
 
 - [🪪 Introducció a la identitat digital sobirana (SSI)](./eidas/01-introduction/page.md)
-- [⚖️ D'eIDAS a eIDAS 2.0]()
+- [⚖️ D'eIDAS a eIDAS 2.0](./eidas/02-eidas-2/page.md)
 - [🌉 De la SSI a la EUDI Wallet]()
 - [🏛️ Arquitectura i actors]()
 - [🎫 Credencials]()

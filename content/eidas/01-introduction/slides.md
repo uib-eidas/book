@@ -87,7 +87,7 @@
 
 - S'afegeix un intermediari: el **proveïdor d'identitat** (_Identity Provider_, IDP)
 - Un sol compte a l'IDP ens permet iniciar sessió a tots els llocs que hi confien
-  - Cada un d'aquests llocs és una **part receptora** (_Relying Party_, RP)
+  - Cada un d'aquests llocs és una **part usuària** (_Relying Party_, RP)
   - El conjunt de llocs que usen el mateix IDP és una **federació**
 - Protocols: **SAML**, **OAuth** i **OpenID Connect**
 - Exemples: _single sign-on_ (SSO) corporatiu, «Inicia sessió amb Google / Facebook / GitHub»

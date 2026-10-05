@@ -67,7 +67,7 @@
 - **Aprofundiment** (temes 8 a 10)
   - Serveis de confiança, privadesa i posada en pràctica
 
-> Aquesta documentació està en elaboració: ara mateix només hi ha disponible el tema 1.
+> Aquesta documentació està en elaboració: ara mateix hi ha disponibles els temes 1 i 2.
 
 ---
 
