@@ -288,12 +288,20 @@ Un identificador amb quatre propietats:
 
 ## 7. Marcs de governança
 
-- La confiança criptogràfica no és **confiança humana**
-- Confiar en cada emissor d'un en un no escala
-  - Com les targetes de crèdit abans de Visa i MasterCard
-- **Marc de governança** (_trust framework_): regles de negoci, legals i tècniques
-  - L'administra una **autoritat de governança**
-  - Diu quins emissors estan autoritzats
+- La criptografia diu si una signatura és vàlida, però no si l'emissor és **de fiar**
+- Un verificador no pot conèixer tots els emissors del món, d'un en un
+- Les **targetes de crèdit** tenien el mateix problema:
+  - Al principi cada banc emetia la seva, i les botigues no les podien acceptar totes
+  - La solució varen ser **xarxes amb regles comunes**, com Visa i MasterCard
+  - Una botiga accepta la targeta d'un banc que no coneix, perquè es fia de la xarxa
+
+---v
+
+## Què és un marc de governança?
+
+- Un conjunt de **regles** de negoci, legals i tècniques (_trust framework_)
+- L'administra una **autoritat de governança**
+- Diu quins emissors estan autoritzats, i què han de complir
 - El verificador pot acceptar un emissor que no coneix, si l'autoritza un marc en què confia
 
 ---v
