@@ -13,7 +13,7 @@ create-missing = false # opt out of helper to create missing stub files, we want
 edition = "2021"
 
 [output.html]
-site-url = "/eidas/" # needed for gh-pages, MUST match repo name on github!
+site-url = "/book/" # needed for gh-pages, MUST match repo name on github!
 git-repository-url = "https://github.com/uib-eidas/book"
 edit-url-template = "https://github.com/uib-eidas/book/edit/main/{path}"
 
