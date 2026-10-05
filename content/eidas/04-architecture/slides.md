@@ -4,14 +4,14 @@
 
 ## Mapa d'actors
 
-| Grup | Actors |
-| --- | --- |
-| **Usuari i cartera** | Usuari, proveïdor de la cartera, fabricants de dispositius |
-| **Emissió** | Proveïdors de PID, QEAA, Pub-EAA i EAA; fonts autèntiques; proveïdors d'esquemes |
-| **Consum** | Parts usuàries i intermediaris |
-| **Signatura** | Proveïdors de creació remota de signatura qualificada |
-| **Confiança** | Registradors, autoritats de certificats d'accés, proveïdors de llistes |
-| **Supervisió** | Organismes d'acreditació, d'avaluació de la conformitat i de supervisió |
+| Grup                 | Actors                                                                           |
+| -------------------- | -------------------------------------------------------------------------------- |
+| **Usuari i cartera** | Usuari, proveïdor de la cartera, fabricants de dispositius                       |
+| **Emissió**          | Proveïdors de PID, QEAA, Pub-EAA i EAA; fonts autèntiques; proveïdors d'esquemes |
+| **Consum**           | Parts usuàries i intermediaris                                                   |
+| **Signatura**        | Proveïdors de creació remota de signatura qualificada                            |
+| **Confiança**        | Registradors, autoritats de certificats d'accés, proveïdors de llistes           |
+| **Supervisió**       | Organismes d'acreditació, d'avaluació de la conformitat i de supervisió          |
 
 Una mateixa entitat pot exercir **més d'un rol**, si compleix els requisits de cadascun.
 
@@ -77,12 +77,12 @@ Una mateixa entitat pot exercir **més d'un rol**, si compleix els requisits de 
 
 ## Quatre tipus de WSCD
 
-| Tipus de WSCD | On és | Exemple |
-| --- | --- | --- |
-| **Remot** | Servidor del proveïdor | HSM |
-| **Local extern** | Dispositiu a part | Targeta intel·ligent |
-| **Local intern** | Dins el dispositiu | SIM, eSIM, element segur |
-| **Local natiu** | Dins el dispositiu, a través del sistema operatiu | API del sistema |
+| Tipus de WSCD    | On és                                             | Exemple                  |
+| ---------------- | ------------------------------------------------- | ------------------------ |
+| **Remot**        | Servidor del proveïdor                            | HSM                      |
+| **Local extern** | Dispositiu a part                                 | Targeta intel·ligent     |
+| **Local intern** | Dins el dispositiu                                | SIM, eSIM, element segur |
+| **Local natiu**  | Dins el dispositiu, a través del sistema operatiu | API del sistema          |
 
 - El proveïdor pot triar qualsevol arquitectura, però ha de garantir un **nivell de garantia alt**
 - L'accés a les claus exigeix sempre **dos mecanismes d'autenticació** de l'usuari
@@ -91,14 +91,14 @@ Una mateixa entitat pot exercir **més d'un rol**, si compleix els requisits de 
 
 ## Interfícies de la cartera
 
-| Interfície | Amb qui | Protocol |
-| --- | --- | --- |
-| **Emissió** | Proveïdors de PID i de declaracions | OpenID4VCI |
-| **Presentació remota** | Parts usuàries | OpenID4VP, ISO/IEC 18013-7 |
-| **Presentació presencial** | Parts usuàries, altres carteres | ISO/IEC 18013-5 |
-| **Signatura remota** | Proveïdor de signatura | — |
-| **Proveïdor de la cartera** | El seu servidor | No estandarditzada |
-| **Usuari** | La persona | No estandarditzada |
+| Interfície                  | Amb qui                             | Protocol                   |
+| --------------------------- | ----------------------------------- | -------------------------- |
+| **Emissió**                 | Proveïdors de PID i de declaracions | OpenID4VCI                 |
+| **Presentació remota**      | Parts usuàries                      | OpenID4VP, ISO/IEC 18013-7 |
+| **Presentació presencial**  | Parts usuàries, altres carteres     | ISO/IEC 18013-5            |
+| **Signatura remota**        | Proveïdor de signatura              | —                          |
+| **Proveïdor de la cartera** | El seu servidor                     | No estandarditzada         |
+| **Usuari**                  | La persona                          | No estandarditzada         |
 
 ---
 

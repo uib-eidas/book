@@ -188,14 +188,14 @@ Sempre a **petició voluntària de l'usuari**.
 
 ## Què canvia
 
-| | eIDAS (2014) | eIDAS 2.0 (2024) |
-| --- | --- | --- |
-| **Mitjà d'identificació** | Sistemes nacionals | Sistemes nacionals i cartera |
-| **Obligació dels estats** | Notificar és opcional | Oferir almenys una cartera |
-| **Abast** | Sector públic | Públic i part del privat |
-| **Dades** | Identitat | Identitat i atributs |
-| **Control de l'usuari** | No previst | Divulgació selectiva |
-| **Serveis de confiança** | Signatura, segell, temps, entrega, web | S'hi afegeixen atributs, arxiu i llibres majors |
+|                           | eIDAS (2014)                           | eIDAS 2.0 (2024)                                |
+| ------------------------- | -------------------------------------- | ----------------------------------------------- |
+| **Mitjà d'identificació** | Sistemes nacionals                     | Sistemes nacionals i cartera                    |
+| **Obligació dels estats** | Notificar és opcional                  | Oferir almenys una cartera                      |
+| **Abast**                 | Sector públic                          | Públic i part del privat                        |
+| **Dades**                 | Identitat                              | Identitat i atributs                            |
+| **Control de l'usuari**   | No previst                             | Divulgació selectiva                            |
+| **Serveis de confiança**  | Signatura, segell, temps, entrega, web | S'hi afegeixen atributs, arxiu i llibres majors |
 
 ---
 

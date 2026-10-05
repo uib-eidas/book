@@ -59,15 +59,15 @@ I tres riscos de sistema: **vigilància massiva**, dany reputacional i incomplim
 
 ## Mesures que ja hem vist
 
-| Risc | Mesura | Tema |
-| --- | --- | --- |
-| Part usuària falsa | Certificat d'accés | 7 |
-| Demanar dades de més | Certificat de registre i aprovació de l'usuari | 7 |
-| Declaració falsa | Signatura de l'emissor i llistes de confiança | 7 |
-| Declaració copiada | Vinculació al dispositiu | 5 |
-| Robatori de claus | Dispositiu criptogràfic segur (WSCD) | 4 |
-| Cartera compromesa | Acreditacions i revocació | 4 |
-| _Phishing_ entre dispositius | Comprovació de proximitat | 6 |
+| Risc                         | Mesura                                         | Tema |
+| ---------------------------- | ---------------------------------------------- | ---- |
+| Part usuària falsa           | Certificat d'accés                             | 7    |
+| Demanar dades de més         | Certificat de registre i aprovació de l'usuari | 7    |
+| Declaració falsa             | Signatura de l'emissor i llistes de confiança  | 7    |
+| Declaració copiada           | Vinculació al dispositiu                       | 5    |
+| Robatori de claus            | Dispositiu criptogràfic segur (WSCD)           | 4    |
+| Cartera compromesa           | Acreditacions i revocació                      | 4    |
+| _Phishing_ entre dispositius | Comprovació de proximitat                      | 6    |
 
 ---
 
@@ -91,12 +91,12 @@ I tres riscos de sistema: **vigilància massiva**, dany reputacional i incomplim
 
 ## Mitigar la vinculabilitat entre parts usuàries
 
-| Mètode | Com funciona | Suport |
-| --- | --- | --- |
-| **A. D'un sol ús** | Cada declaració es presenta una sola vegada | Obligatori |
-| **B. De temps limitat** | Vàlides durant poc temps | Obligatori |
-| **C. Lot rotatori** | En ordre aleatori, i es torna a començar | Opcional |
-| **D. Per part usuària** | Una de diferent per a cada part usuària | Opcional |
+| Mètode                  | Com funciona                                | Suport     |
+| ----------------------- | ------------------------------------------- | ---------- |
+| **A. D'un sol ús**      | Cada declaració es presenta una sola vegada | Obligatori |
+| **B. De temps limitat** | Vàlides durant poc temps                    | Obligatori |
+| **C. Lot rotatori**     | En ordre aleatori, i es torna a començar    | Opcional   |
+| **D. Per part usuària** | Una de diferent per a cada part usuària     | Opcional   |
 
 - Només el mètode A l'elimina del tot
 - Qui faci seguiment perd els **certificats d'accés**

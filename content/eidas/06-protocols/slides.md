@@ -4,11 +4,11 @@
 
 ## Tres moments, tres protocols
 
-| Moment | Entre qui | Protocol |
-| --- | --- | --- |
-| **Emissió** | Proveïdor i cartera | OpenID4VCI |
-| **Presentació remota** | Cartera i part usuària, per Internet | OpenID4VP |
-| **Presentació presencial** | Cartera i part usuària, de prop | ISO/IEC 18013-5 |
+| Moment                     | Entre qui                            | Protocol        |
+| -------------------------- | ------------------------------------ | --------------- |
+| **Emissió**                | Proveïdor i cartera                  | OpenID4VCI      |
+| **Presentació remota**     | Cartera i part usuària, per Internet | OpenID4VP       |
+| **Presentació presencial** | Cartera i part usuària, de prop      | ISO/IEC 18013-5 |
 
 - Un **protocol** defineix els missatges que s'intercanvien
 - Un **mecanisme de transmissió** defineix com s'estableix el canal per enviar-los
@@ -232,13 +232,13 @@ Tots dos serveixen per als dos fluxos remots:
 
 ## Resum
 
-| | Emissió | Presentació remota | Presentació presencial |
-| --- | --- | --- | --- |
-| **Protocol** | OpenID4VCI | OpenID4VP | ISO/IEC 18013-5 |
-| **Transport** | HTTP | HTTP | Bluetooth, NFC, Wi-Fi Aware |
-| **Formats** | mdoc, SD-JWT VC | mdoc, SD-JWT VC | mdoc |
-| **Cal Internet** | Sí | Sí | No |
-| **Qui s'autentica** | Cartera i proveïdor | Part usuària | Part usuària |
+|                     | Emissió             | Presentació remota | Presentació presencial      |
+| ------------------- | ------------------- | ------------------ | --------------------------- |
+| **Protocol**        | OpenID4VCI          | OpenID4VP          | ISO/IEC 18013-5             |
+| **Transport**       | HTTP                | HTTP               | Bluetooth, NFC, Wi-Fi Aware |
+| **Formats**         | mdoc, SD-JWT VC     | mdoc, SD-JWT VC    | mdoc                        |
+| **Cal Internet**    | Sí                  | Sí                 | No                          |
+| **Qui s'autentica** | Cartera i proveïdor | Part usuària       | Part usuària                |
 
 ---
 

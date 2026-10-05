@@ -31,15 +31,15 @@
 
 ## Aplicacions i serveis
 
-| Peça | Repositori | Llenguatge |
-| --- | --- | --- |
-| **Cartera per a Android** | `eudi-app-android-wallet-ui` | Kotlin |
-| **Cartera per a iOS** | `eudi-app-ios-wallet-ui` | Swift |
-| **Emissor de PID i mDL** | `eudi-srv-pid-issuer` | Kotlin |
-| **Verificador** | `eudi-srv-verifier-endpoint` | Kotlin |
-| **Verificador web** | `eudi-web-verifier` | TypeScript |
-| **Proveïdor de cartera** | `eudi-srv-wallet-provider` | Kotlin |
-| **Validador de confiança** | `eudi-srv-trust-validator` | Kotlin |
+| Peça                       | Repositori                   | Llenguatge |
+| -------------------------- | ---------------------------- | ---------- |
+| **Cartera per a Android**  | `eudi-app-android-wallet-ui` | Kotlin     |
+| **Cartera per a iOS**      | `eudi-app-ios-wallet-ui`     | Swift      |
+| **Emissor de PID i mDL**   | `eudi-srv-pid-issuer`        | Kotlin     |
+| **Verificador**            | `eudi-srv-verifier-endpoint` | Kotlin     |
+| **Verificador web**        | `eudi-web-verifier`          | TypeScript |
+| **Proveïdor de cartera**   | `eudi-srv-wallet-provider`   | Kotlin     |
+| **Validador de confiança** | `eudi-srv-trust-validator`   | Kotlin     |
 
 ---v
 

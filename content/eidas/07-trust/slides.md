@@ -26,11 +26,11 @@ La resposta es construeix amb **certificats X.509** i **llistes signades** per u
 
 ## Dues menes de llistes
 
-| | Llistes de confiança | Llistes d'entitats de confiança (LoTE) |
-| --- | --- | --- |
-| **Per a qui** | Prestadors qualificats | Proveïdors de cartera, de PID i de Pub-EAA, entre d'altres |
-| **Qui les signa** | Cada estat membre | La Comissió |
-| **Estàndard** | ETSI TS 119 612 | ETSI TS 119 602 |
+|                   | Llistes de confiança   | Llistes d'entitats de confiança (LoTE)                     |
+| ----------------- | ---------------------- | ---------------------------------------------------------- |
+| **Per a qui**     | Prestadors qualificats | Proveïdors de cartera, de PID i de Pub-EAA, entre d'altres |
+| **Qui les signa** | Cada estat membre      | La Comissió                                                |
+| **Estàndard**     | ETSI TS 119 612        | ETSI TS 119 602                                            |
 
 - Les **parts usuàries** no figuren en cap llista
 - Una entitat no se n'esborra mai: passa a estat **invàlid**
@@ -58,25 +58,25 @@ La resposta es construeix amb **certificats X.509** i **llistes signades** per u
 
 ## Dos certificats
 
-| | Certificat d'accés | Certificat de registre |
-| --- | --- | --- |
-| **Qui l'emet** | Autoritat de certificats d'accés | Proveïdor de certificats de registre |
-| **Què diu** | Qui és l'entitat | Què ha registrat que farà |
-| **Per a què serveix** | Autenticar-se davant la cartera | Comprovar que no se surt del que ha registrat |
-| **Quants** | Un per cada instància | Un per cada ús previst |
+|                       | Certificat d'accés               | Certificat de registre                        |
+| --------------------- | -------------------------------- | --------------------------------------------- |
+| **Qui l'emet**        | Autoritat de certificats d'accés | Proveïdor de certificats de registre          |
+| **Què diu**           | Qui és l'entitat                 | Què ha registrat que farà                     |
+| **Per a què serveix** | Autenticar-se davant la cartera  | Comprovar que no se surt del que ha registrat |
+| **Quants**            | Un per cada instància            | Un per cada ús previst                        |
 
 ---
 
 ## Com entra cada actor
 
-| Actor | Com entra a l'ecosistema | On es publica la seva àncora |
-| --- | --- | --- |
-| **Proveïdor de cartera** | Solució certificada; l'estat el notifica | LoTE |
-| **Proveïdor de PID** | Registre i notificació | LoTE |
-| **Proveïdor de Pub-EAA** | Registre i notificació | LoTE |
-| **Proveïdor de QEAA** | Registre i estatus qualificat | Llista de confiança |
-| **Proveïdor d'EAA** | Registre | Segons el llibre de regles |
-| **Part usuària** | Registre | Enlloc: certificat d'accés |
+| Actor                    | Com entra a l'ecosistema                 | On es publica la seva àncora |
+| ------------------------ | ---------------------------------------- | ---------------------------- |
+| **Proveïdor de cartera** | Solució certificada; l'estat el notifica | LoTE                         |
+| **Proveïdor de PID**     | Registre i notificació                   | LoTE                         |
+| **Proveïdor de Pub-EAA** | Registre i notificació                   | LoTE                         |
+| **Proveïdor de QEAA**    | Registre i estatus qualificat            | Llista de confiança          |
+| **Proveïdor d'EAA**      | Registre                                 | Segons el llibre de regles   |
+| **Part usuària**         | Registre                                 | Enlloc: certificat d'accés   |
 
 ---v
 
@@ -157,12 +157,12 @@ Exemple il·lustratiu i simplificat, amb dades inventades.
 
 Diu què va declarar el banc en registrar-se:
 
-| Camp | Contingut |
-| --- | --- |
-| **Entitat** | Banc Exemple SA, amb el mateix identificador que al certificat d'accés |
-| **Ús previst** | Identificació del client en obrir un compte |
-| **Atributs** | Nom, cognoms, data de naixement i nacionalitat |
-| **Signat per** | El proveïdor de certificats de registre |
+| Camp           | Contingut                                                              |
+| -------------- | ---------------------------------------------------------------------- |
+| **Entitat**    | Banc Exemple SA, amb el mateix identificador que al certificat d'accés |
+| **Ús previst** | Identificació del client en obrir un compte                            |
+| **Atributs**   | Nom, cognoms, data de naixement i nacionalitat                         |
+| **Signat per** | El proveïdor de certificats de registre                                |
 
 Si el banc demanés també l'adreça, la cartera avisaria la Maria que no l'havia registrada.
 
@@ -193,13 +193,13 @@ Si el banc demanés també l'adreça, la cartera avisaria la Maria que no l'havi
 
 ## Qui verifica què
 
-| Qui | Què verifica | Amb l'àncora de |
-| --- | --- | --- |
-| **Emissor** | La cartera | Proveïdor de la cartera |
-| **Cartera** | Qui és l'emissor o la part usuària | Autoritat de certificats d'accés |
-| **Cartera** | Què han registrat | Proveïdor de certificats de registre |
-| **Part usuària** | PID i Pub-EAA | El seu proveïdor |
-| **Part usuària** | QEAA | Prestador qualificat |
+| Qui              | Què verifica                       | Amb l'àncora de                      |
+| ---------------- | ---------------------------------- | ------------------------------------ |
+| **Emissor**      | La cartera                         | Proveïdor de la cartera              |
+| **Cartera**      | Qui és l'emissor o la part usuària | Autoritat de certificats d'accés     |
+| **Cartera**      | Què han registrat                  | Proveïdor de certificats de registre |
+| **Part usuària** | PID i Pub-EAA                      | El seu proveïdor                     |
+| **Part usuària** | QEAA                               | Prestador qualificat                 |
 
 ---
 

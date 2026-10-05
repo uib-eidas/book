@@ -31,16 +31,16 @@
 
 ## De la SSI a eIDAS 2.0: vocabulari
 
-| SSI | eIDAS 2.0 |
-| --- | --- |
-| **Emissor** | Proveïdor de PID o de declaracions d'atributs |
-| **Titular** | Usuari de la cartera |
-| **Cartera i agent** | Unitat de cartera (_Wallet Unit_) |
-| **Verificador** | Part usuària |
-| **Credencial verificable** | PID i declaracions electròniques d'atributs |
-| **DID** | Certificats X.509 |
-| **Registre de dades verificable** | Llistes de confiança |
-| **Marc de governança** | Reglament, actes d'execució i esquemes de declaració |
+| SSI                               | eIDAS 2.0                                            |
+| --------------------------------- | ---------------------------------------------------- |
+| **Emissor**                       | Proveïdor de PID o de declaracions d'atributs        |
+| **Titular**                       | Usuari de la cartera                                 |
+| **Cartera i agent**               | Unitat de cartera (_Wallet Unit_)                    |
+| **Verificador**                   | Part usuària                                         |
+| **Credencial verificable**        | PID i declaracions electròniques d'atributs          |
+| **DID**                           | Certificats X.509                                    |
+| **Registre de dades verificable** | Llistes de confiança                                 |
+| **Marc de governança**            | Reglament, actes d'execució i esquemes de declaració |
 
 ---
 
@@ -95,14 +95,14 @@
 
 ## Què canvia respecte de la SSI
 
-| | SSI | EUDI Wallet |
-| --- | --- | --- |
-| **Identificadors** | DID | Certificats X.509 |
+|                        | SSI                      | EUDI Wallet                            |
+| ---------------------- | ------------------------ | -------------------------------------- |
+| **Identificadors**     | DID                      | Certificats X.509                      |
 | **Arrel de confiança** | Registre descentralitzat | Llistes signades per estats i Comissió |
-| **Qui pot emetre** | Qualsevol | Entitats registrades |
-| **Qui pot verificar** | Qualsevol | Parts usuàries registrades |
-| **Cartera** | Qualsevol | Solució certificada |
-| **Governança** | Marcs voluntaris | Reglament |
+| **Qui pot emetre**     | Qualsevol                | Entitats registrades                   |
+| **Qui pot verificar**  | Qualsevol                | Parts usuàries registrades             |
+| **Cartera**            | Qualsevol                | Solució certificada                    |
+| **Governança**         | Marcs voluntaris         | Reglament                              |
 
 > Les declaracions no qualificades (EAA) poden adoptar altres models de confiança.
 

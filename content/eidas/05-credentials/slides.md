@@ -71,13 +71,13 @@ La diferència és **purament legal**, no tècnica:
 
 ## Formats
 
-| | mdoc | SD-JWT VC | W3C VCDM 2.0 |
-| --- | --- | --- | --- |
-| **Estàndard** | ISO/IEC 18013-5 | IETF | W3C |
-| **Codificació** | CBOR (binari) | JSON | JSON-LD |
-| **Prova** | Hashes amb sal | Hashes amb sal | S'ha de definir a part |
-| **Ús principal** | Presencial | Remot | General |
-| **Suport a la cartera** | Obligatori | Obligatori | Opcional |
+|                         | mdoc            | SD-JWT VC      | W3C VCDM 2.0           |
+| ----------------------- | --------------- | -------------- | ---------------------- |
+| **Estàndard**           | ISO/IEC 18013-5 | IETF           | W3C                    |
+| **Codificació**         | CBOR (binari)   | JSON           | JSON-LD                |
+| **Prova**               | Hashes amb sal  | Hashes amb sal | S'ha de definir a part |
+| **Ús principal**        | Presencial      | Remot          | General                |
+| **Suport a la cartera** | Obligatori      | Obligatori     | Opcional               |
 
 ---v
 
@@ -168,8 +168,12 @@ Els atributs no hi apareixen: només els seus **hashes**.
   "_sd_alg": "sha-256",
   "_sd": ["Kx3f…9aQ", "p0Yt…Zc4", "u7Lm…e2w", "4hNd…Vb8"],
   "cnf": { "jwk": { "kty": "EC", "crv": "P-256", "x": "…", "y": "…" } },
-  "status": { "status_list": {
-    "idx": 4127, "uri": "https://pid.exemple.es/estat/3" } }
+  "status": {
+    "status_list": {
+      "idx": 4127,
+      "uri": "https://pid.exemple.es/estat/3"
+    }
+  }
 }
 ```
 

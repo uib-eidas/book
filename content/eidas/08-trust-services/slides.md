@@ -91,15 +91,15 @@ Ha de complir quatre requisits:
 
 ## Efecte de cada servei qualificat
 
-| Servei qualificat | Què es presumeix |
-| --- | --- |
-| **Signatura** | Equival a la signatura manuscrita |
-| **Segell** | Integritat i origen de les dades |
-| **Segell de temps** | Data i hora exactes, i integritat |
-| **Entrega certificada** | Integritat, remitent, destinatari i moment |
-| **Declaració d'atributs** | Mateix efecte que una declaració en paper |
-| **Arxiu electrònic** | Integritat i origen durant la conservació |
-| **Llibre major** | Ordre cronològic únic i integritat |
+| Servei qualificat         | Què es presumeix                           |
+| ------------------------- | ------------------------------------------ |
+| **Signatura**             | Equival a la signatura manuscrita          |
+| **Segell**                | Integritat i origen de les dades           |
+| **Segell de temps**       | Data i hora exactes, i integritat          |
+| **Entrega certificada**   | Integritat, remitent, destinatari i moment |
+| **Declaració d'atributs** | Mateix efecte que una declaració en paper  |
+| **Arxiu electrònic**      | Integritat i origen durant la conservació  |
+| **Llibre major**          | Ordre cronològic únic i integritat         |
 
 ---
 

@@ -102,12 +102,12 @@
 
 ## Comparació dels tres models
 
-| | Centralitzat | Federat | Descentralitzat |
-| --- | --- | --- | --- |
-| **Base** | Compte a cada lloc | Compte a un IDP | Connexió entre iguals |
-| **Qui controla** | L'organització | L'IDP | L'usuari |
-| **Portabilitat** | No | No | Sí |
-| **Intermediari** | No | Sí | No |
+|                  | Centralitzat       | Federat         | Descentralitzat       |
+| ---------------- | ------------------ | --------------- | --------------------- |
+| **Base**         | Compte a cada lloc | Compte a un IDP | Connexió entre iguals |
+| **Qui controla** | L'organització     | L'IDP           | L'usuari              |
+| **Portabilitat** | No                 | No              | Sí                    |
+| **Intermediari** | No                 | Sí              | No                    |
 
 ---
 
@@ -293,15 +293,15 @@ Amb criptografia i un protocol estàndard, la verificació és digital i es fa e
 
 ## Resum dels blocs
 
-| Bloc | Funció |
-| --- | --- |
-| **Credencials verificables** | Equivalent digital de les credencials físiques |
-| **Emissor, titular, verificador** | Els tres rols del triangle de confiança |
-| **Carteres digitals** | Guarden les credencials al dispositiu |
-| **Agents digitals** | Operen la cartera i es comuniquen amb altres agents |
-| **DID** | Adreces digitals sense autoritat central de registre |
-| **Registres de dades verificables** | Font de veritat per a DID i claus públiques |
-| **Marcs de governança** | Regles que fan interoperables els ecosistemes de confiança |
+| Bloc                                | Funció                                                     |
+| ----------------------------------- | ---------------------------------------------------------- |
+| **Credencials verificables**        | Equivalent digital de les credencials físiques             |
+| **Emissor, titular, verificador**   | Els tres rols del triangle de confiança                    |
+| **Carteres digitals**               | Guarden les credencials al dispositiu                      |
+| **Agents digitals**                 | Operen la cartera i es comuniquen amb altres agents        |
+| **DID**                             | Adreces digitals sense autoritat central de registre       |
+| **Registres de dades verificables** | Font de veritat per a DID i claus públiques                |
+| **Marcs de governança**             | Regles que fan interoperables els ecosistemes de confiança |
 
 ---
 
