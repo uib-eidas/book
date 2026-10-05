@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle">
+  <defs>
+    <marker id="fletxa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#0065bd"/>
+    </marker>
+  </defs>
+  <rect width="960" height="400" fill="#ffffff"/>
+
+  <g stroke="#0065bd" stroke-width="3" marker-end="url(#fletxa)">
+    <line x1="282" y1="80" x2="356" y2="80"/>
+    <line x1="602" y1="80" x2="676" y2="80"/>
+  </g>
+  <g stroke="#0065bd" stroke-width="3">
+    <line x1="480" y1="120" x2="480" y2="170"/>
+    <line x1="300" y1="250" x2="300" y2="300" stroke-dasharray="6 5"/>
+    <line x1="660" y1="250" x2="660" y2="300" stroke-dasharray="6 5"/>
+  </g>
+
+  <g fill="#e8f1fa" stroke="#0065bd" stroke-width="3">
+    <rect x="40" y="40" width="240" height="80" rx="10"/>
+    <rect x="360" y="40" width="240" height="80" rx="10"/>
+    <rect x="680" y="40" width="240" height="80" rx="10"/>
+  </g>
+  <rect x="180" y="170" width="600" height="80" rx="10" fill="#f6f9fc" stroke="#0065bd" stroke-width="3"/>
+  <g fill="#fff4e0" stroke="#b3541e" stroke-width="3">
+    <rect x="160" y="300" width="280" height="70" rx="10"/>
+    <rect x="520" y="300" width="280" height="70" rx="10"/>
+  </g>
+
+  <g font-weight="bold" font-size="18" fill="#1a1a1a">
+    <text x="160" y="76">Emissor de prova</text>
+    <text x="480" y="76">Aplicació de cartera</text>
+    <text x="800" y="76">Verificador de prova</text>
+    <text x="480" y="204">Biblioteques</text>
+    <text x="300" y="332">Proveïdor de cartera</text>
+    <text x="660" y="332">Validador de confiança</text>
+  </g>
+  <g fill="#444444" font-size="14">
+    <text x="160" y="100">PID i permís de conduir</text>
+    <text x="480" y="100">Android i iOS</text>
+    <text x="800" y="100">Servei i aplicació web</text>
+    <text x="480" y="230">Nucli de la cartera · OpenID4VCI · OpenID4VP · SD-JWT · ISO/IEC 18013-5</text>
+    <text x="300" y="354">Acredita les unitats de cartera</text>
+    <text x="660" y="354">Comprova certificats contra les llistes</text>
+  </g>
+  <g fill="#1a1a1a" font-size="13">
+    <text x="319" y="68">Emissió</text>
+    <text x="639" y="68">Presentació</text>
+  </g>
+</svg>
