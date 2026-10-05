@@ -18,7 +18,11 @@ Fonts utilitzades per elaborar aquesta documentació. Gairebé totes són fonts 
 ## 🏛️ Arquitectura i implementació de referència
 
 - [Architecture and Reference Framework (ARF)](https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/): document tècnic de referència de la cartera ([repositori](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework))
+- [Catàleg de llibres de regles](https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog): _Rulebooks_ del PID i del permís de conduir mòbil
 - [EU Digital Identity Wallet a GitHub](https://github.com/eu-digital-identity-wallet): implementació de referència de la Comissió Europea
+- [Documentació de la implementació de referència](https://docs.eudi.dev): components, mapa de funcionalitats i guies d'inici
+- [Marc de conformitat](https://conformance.eudi.dev): avaluació de la conformitat funcional
+- [Solució europea de verificació d'edat](https://github.com/eu-digital-identity-wallet/av-doc-technical-specification): especificació tècnica, amb proves de coneixement zero
 - [Portal de la EUDI Wallet](https://ec.europa.eu/digital-building-blocks/sites/display/EUDIGITALIDENTITYWALLET/): web oficial de la Comissió Europea
 
 ## 🔧 Estàndards tècnics
@@ -35,16 +39,21 @@ Fonts utilitzades per elaborar aquesta documentació. Gairebé totes són fonts 
 - W3C:
   - [Verifiable Credentials Data Model 2.0](https://www.w3.org/TR/vc-data-model-2.0/)
   - [Decentralized Identifiers (DIDs)](https://www.w3.org/TR/did-core/)
+  - [Digital Credentials API](https://www.w3.org/TR/digital-credentials/): esborrany
 - ETSI:
   - [ETSI TS 119 612](https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/): llistes de confiança
+  - [ETSI TS 119 602](https://www.etsi.org/deliver/etsi_ts/119600_119699/119602/): llistes d'entitats de confiança
 
 ## 🔐 Confiança, privadesa i seguretat
 
 - [Navegador de llistes de confiança de la UE](https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls): prestadors qualificats de serveis de confiança
 - [ENISA: identitat digital i protecció de dades](https://www.enisa.europa.eu/topics/digital-identity-and-data-protection)
 - [Carta oberta sobre els QWAC i l'article 45](https://last-chance-for-eidas.org/): crítica d'experts en seguretat a la proposta de reglament (2023)
+- [_Cryptographers' Feedback on the EU Digital Identity's ARF_](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/issues/200): valoració de l'ARF per un grup de criptògrafs (2024)
 
 ## 🚀 Pilots a gran escala
+
+- [Què són els pilots a gran escala](https://ec.europa.eu/digital-building-blocks/sites/display/EUDIGITALIDENTITYWALLET/What+are+the+Large+Scale+Pilot+Projects): pàgina de la Comissió Europea
 
 - [POTENTIAL](https://www.digital-identity-wallet.eu/)
 - [EU Digital Identity Wallet Consortium (EWC)](https://eudiwalletconsortium.org/)
