@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle">
+  <defs>
+    <marker id="fletxa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#0065bd"/>
+    </marker>
+  </defs>
+  <rect width="960" height="360" fill="#ffffff"/>
+
+  <g font-weight="bold" font-size="18" fill="#0065bd">
+    <text x="150" y="34">1. L'emissor signa</text>
+    <text x="480" y="34">2. La cartera presenta</text>
+    <text x="810" y="34">3. La part usuària verifica</text>
+  </g>
+
+  <g stroke="#0065bd" stroke-width="3" marker-end="url(#fletxa)">
+    <line x1="272" y1="170" x2="336" y2="170"/>
+    <line x1="622" y1="170" x2="686" y2="170"/>
+  </g>
+
+  <!-- 1 -->
+  <rect x="30" y="54" width="240" height="250" rx="10" fill="#f6f9fc" stroke="#0065bd" stroke-width="3"/>
+  <g font-family="Menlo, Consolas, monospace" font-size="14" fill="#1a1a1a">
+    <text x="150" y="92">hash(sal₁ + nom)</text>
+    <text x="150" y="124">hash(sal₂ + naixement)</text>
+    <text x="150" y="156">hash(sal₃ + nacionalitat)</text>
+  </g>
+  <rect x="50" y="184" width="200" height="40" rx="8" fill="#fff4e0" stroke="#b3541e" stroke-width="2"/>
+  <text x="150" y="209" fill="#1a1a1a" font-weight="bold">Signatura de l'emissor</text>
+  <text x="150" y="258" fill="#444444">La signatura cobreix els</text>
+  <text x="150" y="278" fill="#444444">hashes, no els valors</text>
+
+  <!-- 2 -->
+  <rect x="340" y="54" width="280" height="250" rx="10" fill="#f6f9fc" stroke="#0065bd" stroke-width="3"/>
+  <text x="480" y="86" fill="#1a1a1a">Tots els hashes signats</text>
+  <rect x="360" y="104" width="240" height="64" rx="8" fill="#e8f1fa" stroke="#0065bd" stroke-width="2"/>
+  <text x="480" y="130" fill="#1a1a1a" font-weight="bold">Només revela:</text>
+  <text x="480" y="153" font-family="Menlo, Consolas, monospace" font-size="14" fill="#1a1a1a">sal₃, nacionalitat = ES</text>
+  <g fill="#888888" font-family="Menlo, Consolas, monospace" font-size="14">
+    <text x="480" y="204">sal₁, nom: ocult</text>
+    <text x="480" y="230">sal₂, naixement: ocult</text>
+  </g>
+  <text x="480" y="278" fill="#444444">L'usuari tria què comparteix</text>
+
+  <!-- 3 -->
+  <rect x="690" y="54" width="240" height="250" rx="10" fill="#f6f9fc" stroke="#0065bd" stroke-width="3"/>
+  <text x="810" y="92" fill="#1a1a1a">Verifica la signatura</text>
+  <text x="810" y="134" fill="#1a1a1a">Recalcula</text>
+  <text x="810" y="158" font-family="Menlo, Consolas, monospace" font-size="14" fill="#1a1a1a">hash(sal₃ + ES)</text>
+  <text x="810" y="200" fill="#1a1a1a">i comprova que és</text>
+  <text x="810" y="222" fill="#1a1a1a">a la llista signada</text>
+  <text x="810" y="268" fill="#444444">No aprèn res dels</text>
+  <text x="810" y="288" fill="#444444">atributs ocults</text>
+
+  <text x="480" y="340" fill="#444444">La sal, aleatòria i diferent per a cada atribut, impedeix endevinar els valors ocults provant-ne de possibles.</text>
+</svg>

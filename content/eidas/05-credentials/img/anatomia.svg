@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle">
+  <rect width="960" height="330" fill="#ffffff"/>
+
+  <rect x="40" y="30" width="880" height="270" rx="14" fill="#f6f9fc" stroke="#0065bd" stroke-width="3" stroke-dasharray="8 6"/>
+  <text x="60" y="60" text-anchor="start" font-weight="bold" font-size="18" fill="#0065bd">Declaració electrònica d'atributs</text>
+
+  <g stroke-width="3">
+    <rect x="70" y="80" width="260" height="195" rx="10" fill="#e8f1fa" stroke="#0065bd"/>
+    <rect x="350" y="80" width="260" height="195" rx="10" fill="#e8f1fa" stroke="#0065bd"/>
+    <rect x="630" y="80" width="260" height="195" rx="10" fill="#fff4e0" stroke="#b3541e"/>
+  </g>
+
+  <g font-weight="bold" font-size="19" fill="#1a1a1a">
+    <text x="200" y="112">Atributs</text>
+    <text x="480" y="112">Metadades</text>
+    <text x="760" y="112">Prova</text>
+  </g>
+  <g fill="#444444" font-size="14">
+    <text x="200" y="134">Què es diu del subjecte</text>
+    <text x="480" y="134">Què es diu de la declaració</text>
+    <text x="760" y="134">Per què ens en podem fiar</text>
+  </g>
+
+  <g fill="#1a1a1a" font-size="15">
+    <text x="200" y="170">Nom i cognoms</text>
+    <text x="200" y="194">Data de naixement</text>
+    <text x="200" y="218">Nacionalitat</text>
+    <text x="200" y="242">...</text>
+
+    <text x="480" y="170">Tipus de declaració</text>
+    <text x="480" y="194">Proveïdor</text>
+    <text x="480" y="218">Període de validesa</text>
+    <text x="480" y="242">Clau pública del dispositiu</text>
+    <text x="480" y="266">Referència de revocació</text>
+
+    <text x="760" y="170">Signatura del proveïdor</text>
+    <text x="760" y="194">Certificat del proveïdor</text>
+    <text x="760" y="218">Referència a l'àncora</text>
+    <text x="760" y="237">de confiança</text>
+  </g>
+</svg>

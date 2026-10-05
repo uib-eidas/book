@@ -22,7 +22,7 @@ Una mateixa entitat pot exercir **més d'un rol**, si compleix els requisits de 
 - **Fabricants de dispositius** i proveïdors de subsistemes
   - Aporten la plataforma: maquinari, sistema operatiu, elements segurs, botigues d'aplicacions
 - **Proveïdors d'esquemes de declaració**
-  - Defineixen cada tipus de declaració i en publiquen el **reglament** (_Rulebook_), llegible per persones, i l'**esquema**, llegible per màquines
+  - Defineixen cada tipus de declaració i en publiquen el **llibre de regles** (_Rulebook_), llegible per persones, i l'**esquema**, llegible per màquines
   - La Comissió publica el del PID i manté un **catàleg** d'esquemes
 - **Proveïdors de creació remota de signatura qualificada** (QESRC)
   - Prestadors qualificats que custodien el dispositiu de signatura en remot
