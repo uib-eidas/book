@@ -129,6 +129,88 @@ Els dos formats obligatoris fan servir el mateix mecanisme.
 
 ---
 
+## Un exemple: el PID de la Maria
+
+La Maria vol obrir un compte en un banc, que li demana identificar-se amb la cartera. Aquestes són les dades del seu PID:
+
+```json
+{
+  "vct": "urn:eudi:pid:1",
+  "given_name": "Maria",
+  "family_name": "Ferrer Bosch",
+  "birthdate": "1990-04-12",
+  "nationalities": ["ES"],
+  "place_of_birth": { "country": "ES" },
+  "issuing_authority": "ES",
+  "issuing_country": "ES"
+}
+```
+
+Exemple il·lustratiu, amb dades inventades.
+
+---v
+
+## El que signa l'emissor
+
+Els atributs no hi apareixen: només els seus **hashes**.
+
+```json
+{
+  "iss": "https://pid.exemple.es",
+  "vct": "urn:eudi:pid:1",
+  "exp": 1798761600,
+  "_sd_alg": "sha-256",
+  "_sd": ["Kx3f…9aQ", "p0Yt…Zc4", "u7Lm…e2w", "4hNd…Vb8"],
+  "cnf": { "jwk": { "kty": "EC", "crv": "P-256", "x": "…", "y": "…" } },
+  "status": { "status_list": {
+    "idx": 4127, "uri": "https://pid.exemple.es/estat/3" } }
+}
+```
+
+- `_sd`: els hashes dels atributs
+- `cnf`: la clau pública que vincula el PID al dispositiu
+- `status`: on comprovar si ha estat revocat
+
+---v
+
+## Una divulgació
+
+Per a cada atribut, la cartera guarda una **divulgació**: la sal, el nom i el valor.
+
+```json
+["2GLC42sKQveCfGfryNRN9w", "nationalities", ["ES"]]
+```
+
+- Es codifica en Base64 i se'n calcula el hash
+- Aquest hash és un dels valors de la llista `_sd` que ha signat l'emissor
+- Sense la divulgació, del hash no se'n pot deduir res
+
+---v
+
+## El que rep el banc
+
+Tres parts, separades pel caràcter `~`:
+
+```text
+<JWT signat per l'emissor>~<divulgacions triades>~<prova de possessió>
+```
+
+La prova de possessió la signa la cartera, amb la clau privada del dispositiu:
+
+```json
+{
+  "nonce": "b7Qx2mVf9K",
+  "aud": "x509_hash:Uvo3…Zszk",
+  "iat": 1791802800,
+  "sd_hash": "Dy-R…tW4"
+}
+```
+
+- `nonce` i `aud`: lliguen la resposta a aquesta petició i a aquest banc
+- `sd_hash`: lliga la prova a les divulgacions enviades
+
+---
+
 ## Vinculació al dispositiu
 
 - Evita que una declaració es pugui **copiar** a una altra cartera

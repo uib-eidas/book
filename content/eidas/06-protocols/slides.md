@@ -95,6 +95,69 @@ L'usuari sempre pot aprovar o denegar la petició.
 
 ---
 
+## Un exemple: el banc demana el PID
+
+El banc on la Maria vol obrir un compte envia a la cartera una petició signada:
+
+```json
+{
+  "client_id": "x509_hash:Uvo3…Zszk",
+  "response_type": "vp_token",
+  "response_mode": "direct_post.jwt",
+  "response_uri": "https://banc.exemple.es/resposta",
+  "nonce": "b7Qx2mVf9K",
+  "dcql_query": { … }
+}
+```
+
+- `client_id`: el hash del certificat d'accés del banc
+- `response_uri`: on la cartera ha d'enviar la resposta, xifrada
+- `nonce`: valor d'un sol ús, que la cartera haurà de signar
+
+Exemple il·lustratiu, amb dades inventades.
+
+---v
+
+## Què demana: la consulta
+
+```json
+{
+  "credentials": [{
+    "id": "pid",
+    "format": "dc+sd-jwt",
+    "meta": { "vct_values": ["urn:eudi:pid:1"] },
+    "claims": [
+      { "path": ["given_name"] },
+      { "path": ["family_name"] },
+      { "path": ["birthdate"] },
+      { "path": ["nationalities"] }
+    ]
+  }]
+}
+```
+
+Un PID en format SD-JWT VC, i només **quatre atributs**: la cartera no n'enviarà cap altre.
+
+---v
+
+## La resposta de la cartera
+
+Quan la Maria ho aprova, la cartera envia:
+
+```json
+{
+  "vp_token": {
+    "pid": ["eyJhbGci…~WyIyR0xD…~WyJlbHVW…~eyJ0eXAi…"]
+  }
+}
+```
+
+- La clau `pid` és l'identificador que el banc havia posat a la consulta
+- El valor és el PID presentat: el JWT de l'emissor, les divulgacions dels quatre atributs i la prova de possessió
+- Tot plegat viatja **xifrat** cap al banc
+
+---
+
 ## Com arriba la petició a la cartera?
 
 - **URI personalitzat**: el navegador obre un enllaç com `openid4vp://`, i el sistema operatiu el passa a la cartera

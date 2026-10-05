@@ -136,6 +136,40 @@ La resposta es construeix amb **certificats X.509** i **llistes signades** per u
 
 ---
 
+## Un exemple: els certificats del banc
+
+El **certificat d'accés** del banc on la Maria vol obrir un compte diu qui és:
+
+```text
+Subjecte:   CN=Banc Exemple, O=Banc Exemple SA, C=ES
+Emissor:    CN=Autoritat de certificats d'accés d'exemple, C=ES
+Validesa:   de l'1 de març de 2026 a l'1 de març de 2027
+Clau:       ECDSA P-256
+Revocació:  http://crl.exemple.es/acces.crl
+```
+
+- La cartera en valida la cadena fins a l'àncora de l'autoritat emissora
+- I consulta la llista de revocació
+
+Exemple il·lustratiu i simplificat, amb dades inventades.
+
+---v
+
+## El certificat de registre, per dins
+
+Diu què va declarar el banc en registrar-se:
+
+| Camp | Contingut |
+| --- | --- |
+| **Entitat** | Banc Exemple SA, amb el mateix identificador que al certificat d'accés |
+| **Ús previst** | Identificació del client en obrir un compte |
+| **Atributs** | Nom, cognoms, data de naixement i nacionalitat |
+| **Signat per** | El proveïdor de certificats de registre |
+
+Si el banc demanés també l'adreça, la cartera avisaria la Maria que no l'havia registrada.
+
+---
+
 ## La part usuària verifica una declaració
 
 - Verifica la **signatura** del proveïdor amb la seva àncora de confiança
