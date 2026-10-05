@@ -110,22 +110,13 @@
 
 ## D'on surt la confiança
 
-- **Llistes de confiança** (_Trusted Lists_)
-  - Per als prestadors qualificats, com els proveïdors de QEAA
-  - Les signa i publica cada **estat membre**
-- **Llistes d'entitats de confiança** (_Lists of Trusted Entities_, LoTE)
-  - Per a proveïdors de cartera, de PID i de Pub-EAA, entre d'altres
-  - Les signa i publica la **Comissió**, a partir de la notificació dels estats
-- Les **parts usuàries** no figuren en cap llista: n'hi hauria massa
-  - Es reconeixen pel seu certificat d'accés
+- No d'un registre descentralitzat, sinó de **llistes signades** per una autoritat
+  - Les dels prestadors qualificats, les signa cada **estat membre**
+  - Les de proveïdors de cartera, de PID i de Pub-EAA, les signa la **Comissió**
+- Emissors i parts usuàries s'han de **registrar** al seu estat membre
+  - Reben certificats amb què s'autentiquen davant la cartera
 
----v
-
-## Registre i certificats
-
-- **Registrador**: cada estat registra els proveïdors de PID i de declaracions i les parts usuàries, i en publica les dades
-- **Autoritat de certificats d'accés**: emet els certificats amb què aquestes entitats s'autentiquen davant la cartera
-- **Certificats de registre**: recullen què ha declarat cada entitat, per exemple quines dades vol demanar
+Es veurà amb detall al tema d'infraestructura de confiança.
 
 ---
 
