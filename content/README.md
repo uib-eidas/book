@@ -14,7 +14,7 @@ Us recomanam la [versió en línia](#disponible-en-línia) per a un ús general.
 
 ### Disponible en línia
 
-La darrera versió està disponible a: [https://cabot.dev/eidas/](https://cabot.dev/eidas/)
+La darrera versió està disponible a: [https://uib-eidas.github.io/book/](https://uib-eidas.github.io/book/)
 
 ### Compilar sense connexió
 
