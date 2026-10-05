@@ -20,5 +20,6 @@
 
 ---
 
+[📖 Glossari](./glossary.md)
 [📚 Recursos](./resources.md)
 [📜 Llicència](./LICENSE.md)
