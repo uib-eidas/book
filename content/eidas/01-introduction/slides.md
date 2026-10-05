@@ -33,31 +33,6 @@
 
 ---
 
-## Com de greu és el problema?
-
-- Un usuari d'empresa gestionava de mitjana **191 contrasenyes** (2017)
-- El **80%** de les bretxes per _hacking_ es deuen a contrasenyes compromeses
-- **3.000 milions** de comptes de Yahoo compromesos en una sola bretxa
-- La bretxa d'Equifax ha costat a l'empresa més de **4.000 milions de dòlars**
-- Més del **90%** dels consumidors nord-americans creuen que han perdut el control de les seves dades personals
-
----v
-
-> Si no feim res, ens enfrontarem a una proliferació d'episodis de robatori i engany que erosionaran la confiança pública en Internet.
->
-> — Kim Cameron (2005)
-
----
-
-## Blockchain i descentralització
-
-- **2008**: Satoshi Nakamoto publica _Bitcoin: A Peer-to-Peer Electronic Cash System_
-- **2015**: la comunitat d'identitat (_Internet Identity Workshop_) comença a estudiar la «identitat blockchain»
-- Governs dels EUA, la Unió Europea, Xina i Corea exploren la identitat digital descentralitzada
-- Objectiu comú: passar de sistemes d'identitat **centralitzats** a sistemes **descentralitzats**
-
----
-
 ## Els tres models d'identitat digital
 
 ![Els tres models d'identitat digital: centralitzat, federat i descentralitzat](./img/tres-models.svg)
@@ -112,15 +87,6 @@
   - Cap de les dues parts «proveeix», «controla» ni «posseeix» la relació
   - No hi ha un compte, sinó una **connexió** compartida
 - Vàlid per a persones, organitzacions i coses
-
----v
-
-## El paper de la criptografia
-
-- La base és la **criptografia de clau pública**
-- La blockchain no s'usa com a moneda, sinó com a **infraestructura de clau pública descentralitzada** (DPKI):
-  - **Intercanviar claus públiques** directament, per crear connexions privades i segures entre dos iguals
-  - **Publicar algunes claus públiques** per poder verificar les signatures de les **credencials verificables**
 
 ---v
 
@@ -184,15 +150,6 @@
 3. **Moviment de l'individu sobirà**
    - Fer per a la identitat el que Bitcoin vol fer per als diners
 
----v
-
-## Exemples per sectors
-
-- **Comerç electrònic**: registre i accés sense contrasenyes, avís si el lloc no pot acreditar qui és
-- **Banca i finances**: credencials per superar controls KYC i AML sense reomplir formularis
-- **Salut**: historial clínic a la cartera del pacient, consentiment verificable
-- **Viatges**: prova instantània de credencials amb un codi QR, revelant només les dades necessàries
-
 ---
 
 ## Els set blocs bàsics de la SSI
@@ -204,6 +161,8 @@
 5. Identificadors descentralitzats (DID)
 6. Blockchains i altres registres de dades verificables
 7. Marcs de governança
+
+No tots arriben a eIDAS 2.0: es veurà al tema 3.
 
 ---
 
@@ -229,17 +188,6 @@ Un verificador ha de poder determinar:
 - Si escau, que qui la presenta n'és realment el **subjecte**
 
 Amb criptografia i un protocol estàndard, la verificació és digital i es fa en **segons o mil·lisegons**.
-
----v
-
-## Estructura d'una credencial verificable
-
-Segons el model de dades de credencials verificables del W3C:
-
-1. **Identificador** únic de la credencial
-2. **Metadades**: per exemple, la data de caducitat
-3. **Afirmacions**: nom, data de naixement...
-4. **Signatura digital** de l'emissor
 
 ---
 
@@ -296,11 +244,11 @@ Segons el model de dades de credencials verificables del W3C:
 ## 5. Identificadors descentralitzats (DID)
 
 - Per verificar una signatura cal conèixer la **clau pública correcta** del signant
-- La solució tradicional és la **PKI**, amb autoritats de certificació: massa centralitzada i costosa per a una infraestructura on cada participant gestiona moltes claus
-- Un **DID** és un nou tipus d'identificador amb quatre propietats:
+- La solució clàssica és la **PKI**, amb autoritats de certificació: centralitzada i costosa
+- Un **DID** és un identificador:
   - **Permanent**: no canvia mai
-  - **Resoluble**: permet obtenir les claus públiques i l'adreça de l'agent
-  - **Verificable criptogràficament**: el titular pot demostrar que controla la clau privada
+  - **Resoluble**: porta a les claus públiques i a l'adreça de l'agent
+  - **Verificable**: el titular demostra que en controla la clau privada
   - **Descentralitzat**: sense autoritat central de registre
 
 ---v
@@ -310,27 +258,6 @@ Segons el model de dades de credencials verificables del W3C:
 ![Parts d'un DID: esquema, mètode DID i identificador específic del mètode](./img/did.svg)
 
 - El DID fa d'**adreça** d'una clau pública en una xarxa descentralitzada
-
----v
-
-## Mètodes DID
-
-- Cada **mètode DID** defineix com operar sobre una xarxa concreta:
-  - **Crear** el DID i el seu **document DID** (claus públiques i metadades)
-  - **Llegir** el document DID
-  - **Actualitzar-lo**, per exemple per rotar una clau
-  - **Desactivar** el DID
-- Alguns mètodes no necessiten cap registre distribuït: funcionen només entre iguals (per exemple, `did:peer`)
-
----v
-
-## Connexions DID a DID
-
-- **Permanents**: només es trenquen si una de les parts ho vol
-- **Privades**: comunicació xifrada i signada
-- **D'extrem a extrem**: sense intermediaris
-- **De confiança**: permeten intercanviar credencials verificables
-- **Extensibles**: serveixen per a qualsevol aplicació que necessiti comunicació segura
 
 ---
 
