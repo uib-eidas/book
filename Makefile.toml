@@ -200,13 +200,13 @@ alias = "links-for"
 category = "Checks"
 description = "Check included links for all markup (.md|.html) files."
 # FIXME .mlc.toml config not working... https://github.com/becheran/mlc/issues/78
-script = "mlc content/ --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,'"
+script = "mlc content/ --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,*iso.org*,*eudiwalletconsortium.org*,'"
 
 [tasks.links-for]
 category = "Checks"
 description = "Check links for specific file(s). Example: `makers links-for ./content/eidas/**/*.md`"
 # FIXME .mlc.toml config not working... https://github.com/becheran/mlc/issues/78
-script = "mlc ${@} --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,'"
+script = "mlc ${@} --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,*iso.org*,*eudiwalletconsortium.org*,'"
 
 [tasks.f]
 category = "Format"

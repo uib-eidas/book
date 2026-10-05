@@ -1,7 +1,7 @@
 #!/bin/bash
 # Scan for images:
-# - Files present, but not used as `<img src="{PATH TO IMAGE FILE}" />` divs (img required, per convention)
-# - `<img src="{PATH TO IMAGE FILE}" />` elements defined, but `src="..."` is not found in files
+# - Files present, but not used as `<img src="{PATH TO IMAGE FILE}" />` or `![alt]({PATH TO IMAGE FILE})`
+# - `<img src="..." />` or `![alt](...)` references defined, but the file is not found
 
 if [ -z $1 ] 
 then 
@@ -21,6 +21,8 @@ ramdir=$(mktemp -dt "$(basename $0).XXXXXXXX" --tmpdir=/run/user/$(id -u))
 
 # Find all <img /> sources
 grep -hrPo '<img.*src="\K.*?(?=".*)' $contentpath > $ramdir/img-element-list
+# ...and all Markdown image targets: ![alt](path)
+grep -hrPo '!\[[^\]]*\]\(\K[^)\s]+' $contentpath >> $ramdir/img-element-list
 awk -F ":" '{print $NF}' $ramdir/img-element-list | awk -F "/" '{print $NF}' | sort | uniq > $ramdir/img-element-files
 
 # Find all img flies
