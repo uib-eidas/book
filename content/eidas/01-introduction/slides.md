@@ -247,12 +247,22 @@ Emissor, titular i verificador són **papers**, no tipus d'entitat. Exemple: com
 ## 5. Identificadors descentralitzats (DID)
 
 - Per verificar una signatura cal conèixer la **clau pública correcta** del signant
-- La solució clàssica és la **PKI**, amb autoritats de certificació: centralitzada i costosa
-- Un **DID** és un identificador:
-  - **Permanent**: no canvia mai
-  - **Resoluble**: porta a les claus públiques i a l'adreça de l'agent
-  - **Verificable**: el titular demostra que en controla la clau privada
-  - **Descentralitzat**: sense autoritat central de registre
+- La solució clàssica és la **PKI** (_Public Key Infrastructure_), la infraestructura de clau pública
+  - Una **autoritat de certificació** emet certificats que diuen de qui és cada clau
+  - Ens fiam del certificat perquè ens fiam de l'autoritat
+- És un model **centralitzat** i costós
+- Els **DID** volen resoldre el mateix problema sense cap autoritat central
+
+---v
+
+## Què és un DID?
+
+Un identificador amb quatre propietats:
+
+- **Permanent**: no canvia mai
+- **Resoluble**: porta a les claus públiques i a l'adreça de l'agent
+- **Verificable**: el titular demostra que en controla la clau privada
+- **Descentralitzat**: sense autoritat central de registre
 
 ---v
 
