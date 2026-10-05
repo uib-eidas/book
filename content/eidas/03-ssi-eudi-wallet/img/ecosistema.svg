@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle">
+  <defs>
+    <marker id="fletxa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#0065bd"/>
+    </marker>
+    <marker id="fletxa-conf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#b3541e"/>
+    </marker>
+  </defs>
+  <rect width="960" height="400" fill="#ffffff"/>
+
+  <g stroke="#0065bd" stroke-width="3" marker-end="url(#fletxa)">
+    <line x1="262" y1="105" x2="366" y2="105"/>
+    <line x1="592" y1="105" x2="696" y2="105"/>
+  </g>
+  <g stroke="#b3541e" stroke-width="3" marker-end="url(#fletxa-conf)">
+    <line x1="150" y1="298" x2="150" y2="156"/>
+    <line x1="480" y1="298" x2="480" y2="156"/>
+    <line x1="810" y1="298" x2="810" y2="156"/>
+  </g>
+
+  <g fill="#e8f1fa" stroke="#0065bd" stroke-width="3">
+    <rect x="40" y="58" width="220" height="94" rx="10"/>
+    <rect x="370" y="58" width="220" height="94" rx="10"/>
+    <rect x="700" y="58" width="220" height="94" rx="10"/>
+  </g>
+  <rect x="40" y="300" width="880" height="70" rx="10" fill="#fff4e0" stroke="#b3541e" stroke-width="3"/>
+
+  <g font-weight="bold" fill="#1a1a1a" font-size="18">
+    <text x="150" y="92">Proveïdors de PID</text>
+    <text x="150" y="114">i de declaracions</text>
+    <text x="480" y="92">Usuari i</text>
+    <text x="480" y="114">unitat de cartera</text>
+    <text x="810" y="103">Part usuària</text>
+    <text x="480" y="330">Infraestructura de confiança</text>
+  </g>
+  <g fill="#0065bd" font-size="15">
+    <text x="150" y="138">Emissor</text>
+    <text x="480" y="138">Titular</text>
+    <text x="810" y="131">Verificador</text>
+  </g>
+
+  <g fill="#1a1a1a">
+    <text x="314" y="92">Emissió</text>
+    <text x="644" y="92">Presentació</text>
+    <text x="480" y="354" font-size="15">Registre · Certificats d'accés · Llistes de confiança · Certificació de carteres</text>
+  </g>
+  <g fill="#b3541e" font-size="15" text-anchor="start">
+    <text x="162" y="232">Registra i autentica</text>
+    <text x="492" y="232">Certifica i acredita</text>
+    <text x="798" y="232" text-anchor="end">Registra i autentica</text>
+  </g>
+</svg>
