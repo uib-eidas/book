@@ -197,11 +197,24 @@ Amb criptografia i un protocol estàndard, la verificació és digital i es fa e
 
 ---v
 
-- Les credencials només transmeten confiança si **el verificador confia en l'emissor**
-  - No cal que hi tengui una relació directa, comercial ni legal
-- El triangle descriu només **una banda** de la transacció
-  - En una mateixa transacció, les dues parts poden fer de titular i de verificador
-  - Moltes transaccions acaben amb l'emissió d'una **credencial nova**
+## Per què funciona?
+
+- Una credencial només serveix si el verificador **es fia de qui l'ha emesa**
+- No cal que el conegui ni que hi tengui cap tracte
+  - Un bar es fia d'un DNI sense haver parlat mai amb la policia
+
+---v
+
+## Els papers canvien
+
+Emissor, titular i verificador són **papers**, no tipus d'entitat. Exemple: compres un viatge a una agència.
+
+1. Tu demanes a l'agència que acrediti que té assegurança
+   - Tu fas de **verificador**, i l'agència de **titular**
+2. L'agència et demana que acreditis que ets major d'edat
+   - Ara és a l'inrevés
+3. Pagues, i l'agència t'envia els bitllets
+   - L'agència fa d'**emissor**: tens una credencial nova
 
 ---
 
