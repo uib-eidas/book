@@ -78,7 +78,7 @@
 
 - _European Digital Identity Wallet_ (EUDI Wallet)
 - És un **mitjà d'identificació electrònica** que permet a l'usuari:
-  - Guardar i gestionar les seves **dades d'identificació** i **declaracions d'atributs**
+  - Guardar i gestionar les seves **dades d'identificació** (PID) i les seves **declaracions d'atributs** (EAA)
   - Presentar-les a les parts usuàries i a altres carteres
   - **Signar** amb signatura electrònica qualificada
 - Cada estat membre n'ha d'oferir **almenys una**, amb nivell de garantia **alt**: identitat verificada a fons i claus en maquinari segur
@@ -118,6 +118,14 @@
 
 ---
 
+## Dades d'identificació de la persona (PID)
+
+- **PID** (_Person Identification Data_): el conjunt de dades que identifica una persona: nom, cognoms, data de naixement, nacionalitat...
+- Les emet un **proveïdor de PID** designat per cada estat, d'acord amb la seva llei
+- És l'equivalent del DNI dins la cartera: sense un PID vàlid, la cartera no pot identificar l'usuari
+
+---
+
 ## Declaracions electròniques d'atributs (EAA)
 
 - **Atribut**: característica, qualitat, dret o permís d'una persona o d'un objecte
@@ -126,6 +134,15 @@
   - **EAA, no qualificada**: qualsevol prestador de serveis de confiança
   - **QEAA** (_Qualified EAA_): un prestador **qualificat** de serveis de confiança
   - **Pub-EAA** (_Public body EAA_): un organisme públic responsable d'una **font autèntica**, o algú en nom seu
+
+---v
+
+## PID i EAA
+
+- El PID diu **qui ets**; una declaració d'atributs diu **què és cert sobre tu**: un títol, un permís, una adreça
+- Legalment són categories diferents: el reglament tracta el PID a part de les EAA
+- Tècnicament es construeixen igual, amb els mateixos formats i protocols
+- Les dues viuen a la cartera i es presenten de la mateixa manera
 
 ---v
 
@@ -152,7 +169,8 @@ Els estats han de permetre verificar, contra fonts autèntiques del sector públ
 
 ## Parts usuàries
 
-- **Part usuària** (_relying party_): qui confia en la cartera per prestar un servei
+- **Part usuària** (_relying party_): qui demana dades a la cartera per prestar un servei, com un banc, una botiga en línia o una administració
+  - És el **verificador** del triangle de confiança de la SSI
 - Obligacions:
   - **Registrar-se** a l'estat membre on està establerta
   - Declarar **quines dades demanarà**, i no demanar-ne cap altra
@@ -215,7 +233,7 @@ Els **actes d'execució** són els reglaments amb què la Comissió concreta els
 ## Relació amb la SSI
 
 - eIDAS 2.0 adopta el **triangle de confiança** de la SSI:
-  - **Emissor**: proveïdors de dades d'identificació i de declaracions d'atributs
+  - **Emissor**: proveïdors de PID i de declaracions d'atributs
   - **Titular**: usuari de la cartera
   - **Verificador**: part usuària
 - I els seus principis: control de l'usuari, divulgació selectiva i pseudònims
