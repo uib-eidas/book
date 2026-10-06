@@ -17,19 +17,20 @@ Aquesta documentació segueix la terminologia de la versió castellana del regla
 
 ## Model i actors
 
-| Terme                    | En anglès                                        | Què és                                                                                      | Tema                                    |
-| ------------------------ | ------------------------------------------------ | ------------------------------------------------------------------------------------------- | --------------------------------------- |
-| **SSI**                  | _Self-Sovereign Identity_                        | Identitat digital sobirana: model en què l'usuari guarda i presenta les seves credencials   | [1](./eidas/01-introduction/page.md)    |
-| **Emissor**              | _issuer_                                         | Qui emet una credencial. A eIDAS 2.0, un proveïdor de PID o de declaracions                 | [1](./eidas/01-introduction/page.md)    |
-| **Titular**              | _holder_                                         | Qui guarda i presenta les credencials. A eIDAS 2.0, l'usuari de la cartera                  | [1](./eidas/01-introduction/page.md)    |
-| **Verificador**          | _verifier_                                       | Qui demana i comprova credencials. A eIDAS 2.0, la part usuària                             | [1](./eidas/01-introduction/page.md)    |
-| **Part usuària**         | _relying party_ (RP)                             | Qui confia en la cartera per prestar un servei                                              | [2](./eidas/02-eidas-2/page.md)         |
-| **IDP**                  | _Identity Provider_                              | Proveïdor d'identitat del model federat                                                     | [1](./eidas/01-introduction/page.md)    |
-| **Font autèntica**       | _authentic source_                               | Registre reconegut per llei que conté atributs sobre persones                               | [3](./eidas/03-ssi-eudi-wallet/page.md) |
-| **CAB**                  | _Conformity Assessment Body_                     | Organisme d'avaluació de la conformitat: certifica carteres i audita prestadors qualificats | [4](./eidas/04-architecture/page.md)    |
-| **Registrador**          | _registrar_                                      | Organisme de cada estat que registra emissors i parts usuàries                              | [7](./eidas/07-trust/page.md)           |
-| **Prestador qualificat** | _Qualified Trust Service Provider_ (QTSP)        | Prestador de serveis de confiança amb estatus qualificat                                    | [8](./eidas/08-trust-services/page.md)  |
-| **QESRC**                | _Qualified Electronic Signature Remote Creation_ | Proveïdor de creació remota de signatura qualificada                                        | [4](./eidas/04-architecture/page.md)    |
+| Terme                    | En anglès                                        | Què és                                                                                                                 | Tema                                    |
+| ------------------------ | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| **SSI**                  | _Self-Sovereign Identity_                        | Identitat digital sobirana: model en què l'usuari guarda i presenta les seves credencials                              | [1](./eidas/01-introduction/page.md)    |
+| **Emissor**              | _issuer_                                         | Qui emet una credencial. A eIDAS 2.0, un proveïdor de PID o de declaracions                                            | [1](./eidas/01-introduction/page.md)    |
+| **Titular**              | _holder_                                         | Qui guarda i presenta les credencials. A eIDAS 2.0, l'usuari de la cartera                                             | [1](./eidas/01-introduction/page.md)    |
+| **Verificador**          | _verifier_                                       | Qui demana i comprova credencials. A eIDAS 2.0, la part usuària                                                        | [1](./eidas/01-introduction/page.md)    |
+| **Part usuària**         | _relying party_ (RP)                             | Qui confia en la cartera per prestar un servei                                                                         | [2](./eidas/02-eidas-2/page.md)         |
+| **IDP**                  | _Identity Provider_                              | Proveïdor d'identitat del model federat                                                                                | [1](./eidas/01-introduction/page.md)    |
+| **Font autèntica**       | _authentic source_                               | Registre reconegut per llei que conté atributs sobre persones                                                          | [3](./eidas/03-ssi-eudi-wallet/page.md) |
+| **CAB**                  | _Conformity Assessment Body_                     | Organisme d'avaluació de la conformitat: certifica carteres i audita prestadors qualificats                            | [4](./eidas/04-architecture/page.md)    |
+| **Registrador**          | _registrar_                                      | Organisme de cada estat que registra emissors i parts usuàries                                                         | [7](./eidas/07-trust/page.md)           |
+| **Nivell de garantia**   | _level of assurance_ (LoA)                       | Quanta confiança es pot tenir que l'usuari és qui diu ser: baix, substancial o alt. La cartera ha de ser de nivell alt | [2](./eidas/02-eidas-2/page.md)         |
+| **Prestador qualificat** | _Qualified Trust Service Provider_ (QTSP)        | Prestador de serveis de confiança amb estatus qualificat                                                               | [8](./eidas/08-trust-services/page.md)  |
+| **QESRC**                | _Qualified Electronic Signature Remote Creation_ | Proveïdor de creació remota de signatura qualificada                                                                   | [4](./eidas/04-architecture/page.md)    |
 
 ## Cartera
 
