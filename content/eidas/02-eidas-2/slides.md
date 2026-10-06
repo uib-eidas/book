@@ -69,7 +69,7 @@
 - Estableix el **marc europeu d'identitat digital**
 - Tres grans novetats:
   1. La **cartera europea d'identitat digital**
-  2. Les **declaracions electròniques d'atributs**
+  2. Les **declaracions electròniques d'atributs** (EAA)
   3. **Nous serveis de confiança**
 
 ---
@@ -118,14 +118,14 @@
 
 ---
 
-## Declaracions electròniques d'atributs
+## Declaracions electròniques d'atributs (EAA)
 
 - **Atribut**: característica, qualitat, dret o permís d'una persona o d'un objecte
 - **Declaració electrònica d'atributs** (_Electronic Attestation of Attributes_, EAA): declaració en format electrònic que permet autenticar atributs
-- Tres tipus:
-  - **EAA**: no qualificada
-  - **QEAA**: qualificada, emesa per un prestador qualificat de serveis de confiança
-  - **Pub-EAA**: emesa per un organisme públic responsable d'una **font autèntica**, o en nom seu
+- Tres tipus, segons qui les emet:
+  - **EAA, no qualificada**: qualsevol prestador de serveis de confiança
+  - **QEAA** (_Qualified EAA_): un prestador **qualificat** de serveis de confiança
+  - **Pub-EAA** (_Public body EAA_): un organisme públic responsable d'una **font autèntica**, o algú en nom seu
 
 ---v
 
