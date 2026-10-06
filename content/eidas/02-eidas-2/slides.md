@@ -23,20 +23,6 @@
 
 ---v
 
-## Nivells de garantia
-
-- El **nivell de garantia** diu quanta confiança es pot tenir que l'usuari és qui diu ser
-- Depèn de dues coses:
-  - Com es va **comprovar la identitat** en donar-lo d'alta
-  - Com de difícil és **suplantar-lo** després
-- Tres nivells:
-  - **Baix**: només redueix el risc de suplantació
-  - **Substancial**: el redueix força; per exemple, dos factors i identitat contrastada
-  - **Alt**: l'ha d'evitar; identitat verificada presencialment o equivalent, i claus en maquinari segur
-- La cartera europea ha de ser de nivell **alt**
-
----v
-
 ## Pilar 2: serveis de confiança
 
 - Serveis regulats:
@@ -82,6 +68,20 @@
   - Presentar-les a les parts usuàries (_relying parties_) i a altres carteres
   - **Signar** amb signatura electrònica qualificada (QES)
 - Cada estat membre n'ha d'oferir **almenys una**, amb nivell de garantia **alt**: identitat verificada a fons i claus en maquinari segur
+
+---v
+
+## Nivells de garantia
+
+- El **nivell de garantia** diu quanta confiança es pot tenir que l'usuari és qui diu ser
+- Depèn de dues coses:
+  - Com es va **comprovar la identitat** en donar-lo d'alta
+  - Com de difícil és **suplantar-lo** després
+- Tres nivells:
+  - **Baix**: només redueix el risc de suplantació
+  - **Substancial**: el redueix força; per exemple, dos factors i identitat contrastada
+  - **Alt**: l'ha d'evitar; identitat verificada presencialment o equivalent, i claus en maquinari segur
+- La cartera europea ha de ser de nivell **alt**
 
 ---v
 
