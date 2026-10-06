@@ -34,17 +34,18 @@ Aquesta documentació segueix la terminologia de la versió castellana del regla
 
 ## Cartera
 
-| Terme                       | En anglès                                 | Què és                                                              | Tema                                   |
-| --------------------------- | ----------------------------------------- | ------------------------------------------------------------------- | -------------------------------------- |
-| **EUDI Wallet**             | _European Digital Identity Wallet_        | Cartera europea d'identitat digital                                 | [2](./eidas/02-eidas-2/page.md)        |
-| **Unitat de cartera**       | _Wallet Unit_                             | La configuració concreta de cartera que controla un usuari          | [4](./eidas/04-architecture/page.md)   |
-| **Instància de la cartera** | _Wallet Instance_                         | L'aplicació instal·lada al dispositiu                               | [4](./eidas/04-architecture/page.md)   |
-| **WSCD**                    | _Wallet Secure Cryptographic Device_      | Dispositiu resistent a manipulacions que custodia les claus         | [4](./eidas/04-architecture/page.md)   |
-| **WSCA**                    | _Wallet Secure Cryptographic Application_ | Aplicació que gestiona les claus dins el WSCD                       | [4](./eidas/04-architecture/page.md)   |
-| **WIA**                     | _Wallet Instance Attestation_             | Acreditació de la instància: certifica que l'aplicació és autèntica | [4](./eidas/04-architecture/page.md)   |
-| **KA**                      | _Key Attestation_                         | Acreditació de claus: certifica les propietats del WSCD             | [4](./eidas/04-architecture/page.md)   |
-| **QSCD**                    | _Qualified Signature Creation Device_     | Dispositiu qualificat de creació de signatura                       | [8](./eidas/08-trust-services/page.md) |
-| **HSM**                     | _Hardware Security Module_                | Maquinari de servidor que custodia claus                            | [4](./eidas/04-architecture/page.md)   |
+| Terme                       | En anglès                                 | Què és                                                                                                                             | Tema                                   |
+| --------------------------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| **EUDI Wallet**             | _European Digital Identity Wallet_        | Cartera europea d'identitat digital                                                                                                | [2](./eidas/02-eidas-2/page.md)        |
+| **Unitat de cartera**       | _Wallet Unit_                             | La configuració concreta de cartera que controla un usuari                                                                         | [4](./eidas/04-architecture/page.md)   |
+| **Instància de la cartera** | _Wallet Instance_                         | L'aplicació instal·lada al dispositiu                                                                                              | [4](./eidas/04-architecture/page.md)   |
+| **WSCD**                    | _Wallet Secure Cryptographic Device_      | Dispositiu resistent a manipulacions que custodia les claus                                                                        | [4](./eidas/04-architecture/page.md)   |
+| **WSCA**                    | _Wallet Secure Cryptographic Application_ | Aplicació que gestiona les claus dins el WSCD                                                                                      | [4](./eidas/04-architecture/page.md)   |
+| **WIA**                     | _Wallet Instance Attestation_             | Acreditació de la instància: certifica que l'aplicació és autèntica                                                                | [4](./eidas/04-architecture/page.md)   |
+| **KA**                      | _Key Attestation_                         | Acreditació de claus: certifica les propietats del WSCD                                                                            | [4](./eidas/04-architecture/page.md)   |
+| **QES**                     | _Qualified Electronic Signature_          | Signatura electrònica qualificada: feta amb un dispositiu qualificat i un certificat qualificat; equival a la signatura manuscrita | [8](./eidas/08-trust-services/page.md) |
+| **QSCD**                    | _Qualified Signature Creation Device_     | Dispositiu qualificat de creació de signatura                                                                                      | [8](./eidas/08-trust-services/page.md) |
+| **HSM**                     | _Hardware Security Module_                | Maquinari de servidor que custodia claus                                                                                           | [4](./eidas/04-architecture/page.md)   |
 
 ## Credencials
 

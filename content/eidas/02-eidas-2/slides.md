@@ -46,7 +46,7 @@
   - **Certificats d'autenticació de llocs web**
 - Distingeix entre serveis **qualificats** i no qualificats
   - Els prestadors qualificats estan supervisats i figuren a les **llistes de confiança**
-- La **signatura electrònica qualificada** té el mateix efecte jurídic que la signatura manuscrita, i es reconeix a tots els estats membres
+- La **signatura electrònica qualificada** (QES, _Qualified Electronic Signature_) té el mateix efecte jurídic que la signatura manuscrita, i es reconeix a tots els estats membres
 
 ---
 
@@ -80,7 +80,7 @@
 - És un **mitjà d'identificació electrònica** que permet a l'usuari:
   - Guardar i gestionar les seves **dades d'identificació** (PID) i les seves **declaracions d'atributs** (EAA)
   - Presentar-les a les parts usuàries (_relying parties_) i a altres carteres
-  - **Signar** amb signatura electrònica qualificada
+  - **Signar** amb signatura electrònica qualificada (QES)
 - Cada estat membre n'ha d'oferir **almenys una**, amb nivell de garantia **alt**: identitat verificada a fons i claus en maquinari segur
 
 ---v
