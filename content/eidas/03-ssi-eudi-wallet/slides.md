@@ -72,7 +72,7 @@ Els mateixos tres papers de la SSI, amb noms nous. Qui és cadascun, al tema 4.
   - L'emissor no ha de saber on ni quan es fan servir
 - **Divulgació selectiva**: només els atributs necessaris
 - **Pseudònims**, quan no cal identificar l'usuari
-- El **model de tres rols** i els formats de credencial verificable
+- El **model de tres rols** i els **formats** de credencial verificable: mdoc i SD-JWT VC
 
 ---
 
@@ -100,20 +100,6 @@ Els mateixos tres papers de la SSI, amb noms nous. Qui és cadascun, al tema 4.
   - Reben certificats amb què s'autentiquen davant la cartera
 
 Es veurà amb detall al tema d'infraestructura de confiança.
-
----
-
-## Formats i protocols
-
-- **Formats** que tota cartera ha de suportar:
-  - **mdoc** (ISO/IEC 18013-5)
-  - **SD-JWT VC**
-  - El model de dades del W3C és opcional, i només per a declaracions no qualificades
-- **Emissió**: OpenID4VCI
-- **Presentació remota**: OpenID4VP
-- **Presentació presencial**: ISO/IEC 18013-5
-
-Es veuran amb detall als temes de credencials i protocols.
 
 ---
 
