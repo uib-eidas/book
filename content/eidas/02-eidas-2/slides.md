@@ -79,7 +79,7 @@
 - _European Digital Identity Wallet_ (EUDI Wallet)
 - És un **mitjà d'identificació electrònica** que permet a l'usuari:
   - Guardar i gestionar les seves **dades d'identificació** (PID) i les seves **declaracions d'atributs** (EAA)
-  - Presentar-les a les parts usuàries i a altres carteres
+  - Presentar-les a les parts usuàries (_relying parties_) i a altres carteres
   - **Signar** amb signatura electrònica qualificada
 - Cada estat membre n'ha d'oferir **almenys una**, amb nivell de garantia **alt**: identitat verificada a fons i claus en maquinari segur
 
@@ -183,8 +183,8 @@ Els estats han de permetre verificar, contra fonts autèntiques del sector públ
 ## Qui ha d'acceptar la cartera?
 
 - **Sector públic**: tots els serveis en línia que exigeixen identificació electrònica
-- **Sector privat** obligat a fer autenticació forta: transport, energia, banca, salut, educació, telecomunicacions...
-  - Excepte microempreses i petites empreses
+- **Sector privat** obligat per llei o per contracte a fer **autenticació forta** dels usuaris: banca, telecomunicacions, energia, transport, salut, educació...
+  - Les microempreses i petites empreses (**menys de 50 treballadors**) en queden exemptes
 - **Plataformes en línia molt grans**, quan exigeixen autenticació
 
 Sempre a **petició voluntària de l'usuari**.
@@ -193,19 +193,24 @@ Sempre a **petició voluntària de l'usuari**.
 
 ## Nous serveis de confiança
 
-- **Emissió de declaracions electròniques d'atributs**
-- **Arxiu electrònic**
-- **Llibres majors electrònics** (_electronic ledgers_)
-- **Gestió de dispositius remots** de creació de signatura i de segell
+eIDAS ja regulava la signatura, el segell, el segell de temps i l'entrega certificada. eIDAS 2.0 hi afegeix quatre serveis més:
+
+- **Declaracions electròniques d'atributs**: emetre-les i validar-les passa a ser un servei de confiança
+- **Arxiu electrònic**: guardar documents durant anys garantint que no s'alteren i que es podran llegir
+- **Llibres majors electrònics**: registres en què cada anotació queda en ordre cronològic i no es pot modificar
+- **Signatura en remot**: custodiar les claus de signatura de l'usuari en un servidor, en lloc d'una targeta
+
+Si els presta un prestador qualificat, tenen presumpció legal de validesa. Es veuen al tema 8.
 
 ---v
 
 ## Certificats d'autenticació web (QWAC)
 
-- Els **navegadors** han de reconèixer els certificats qualificats d'autenticació de llocs web
-  - I mostrar de manera clara les dades d'identitat que contenen
-- Només poden prendre **mesures cautelars** contra un certificat en cas de bretxa de seguretat o pèrdua d'integritat, i ho han de notificar
-- És un dels punts més polèmics del reglament
+- Quan un navegador mostra el **cadenat**, és perquè el lloc web té un certificat que diu qui és
+- Un **QWAC** (_Qualified Website Authentication Certificate_) és un certificat d'aquests emès per un prestador qualificat, amb la identitat del titular verificada
+- eIDAS 2.0 obliga els **navegadors** a reconèixer-los i a mostrar aquesta identitat a l'usuari
+  - Només poden deixar de confiar-hi si hi ha una bretxa de seguretat, i avisant les autoritats
+- La polèmica: els navegadors perden el control sobre en quins certificats confien. Es veu al tema 9
 
 ---
 
@@ -235,7 +240,7 @@ Els **actes d'execució** són els reglaments amb què la Comissió concreta els
 - eIDAS 2.0 adopta el **triangle de confiança** de la SSI:
   - **Emissor**: proveïdors de PID i de declaracions d'atributs
   - **Titular**: usuari de la cartera
-  - **Verificador**: part usuària
+  - **Verificador**: part usuària (_relying party_)
 - I els seus principis: control de l'usuari, divulgació selectiva i pseudònims
 - La confiança, però, s'ancora en un **marc legal**: prestadors supervisats, registres i llistes de confiança
 
