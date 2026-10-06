@@ -2,6 +2,16 @@
 
 ---
 
+## Principis de disseny
+
+- **Centrat en l'usuari**: és qui controla les seves dades
+- **Accessibilitat**: utilitzable per tothom
+- **Interoperabilitat**: qualsevol cartera funciona amb qualsevol emissor i part usuària de la Unió
+- **Privadesa des del disseny**
+- **Seguretat des del disseny**
+
+---
+
 ## Mapa d'actors
 
 | Grup                 | Actors                                                                                                                                   |
@@ -65,9 +75,8 @@ Una mateixa entitat pot exercir **més d'un rol**, si compleix els requisits de 
 
 - **Proveïdor de la cartera** (_Wallet Provider_): un estat membre, o una organització amb mandat o reconeixement d'un estat
 - **Solució de cartera** (_Wallet Solution_): el producte complet, que ha d'estar **certificat**
-- **Unitat de cartera** (_Wallet Unit_): la configuració concreta que controla un usuari
-  - La **instància** de la cartera (_Wallet Instance_): l'aplicació instal·lada al dispositiu
-  - Un **dispositiu criptogràfic segur** (WSCD, _Wallet Secure Cryptographic Device_), que custodia les claus privades
+- **Unitat de cartera** (_Wallet Unit_): la configuració concreta que controla un usuari, amb l'aplicació i el dispositiu que custodia les claus
+- Tres nivells: qui la proveeix, el producte, i la còpia que té cada persona
 
 ---
 
@@ -78,16 +87,6 @@ Una mateixa entitat pot exercir **més d'un rol**, si compleix els requisits de 
 - Rep un **certificat d'accés** (_access certificate_) per a cada una de les seves instàncies
   - Permet a la cartera autenticar qui li demana les dades
 - Els **intermediaris** que actuen en nom seu també es consideren parts usuàries, i no poden guardar el contingut de les transaccions
-
----
-
-## Principis de disseny
-
-- **Centrat en l'usuari**: és qui controla les seves dades
-- **Accessibilitat**: utilitzable per tothom
-- **Interoperabilitat**: qualsevol cartera funciona amb qualsevol emissor i part usuària de la Unió
-- **Privadesa des del disseny**
-- **Seguretat des del disseny**
 
 ---
 
@@ -171,13 +170,12 @@ Una mateixa entitat pot exercir **més d'un rol**, si compleix els requisits de 
 
 ---v
 
-## Acreditar i revocar una cartera
+## Què vol dir acreditar una cartera
 
-- El proveïdor **acredita** cada unitat: li dona un certificat que demostra que és una cartera autèntica, amb les claus en un dispositiu segur
-  - Els emissors ho comproven abans d'emetre-hi res
+- El proveïdor li dona un **certificat** que demostra que és una cartera autèntica, amb les claus en un dispositiu segur
   - Com el certificat d'un lloc web, però per a la cartera
-- Si la cartera es perd o es compromet, el proveïdor la **revoca**
-  - Deixa de ser acceptada, i els PID que contenia es revoquen també
+- Els emissors ho **comproven** abans d'emetre-hi res: sense acreditació, cap PID
+- Si el proveïdor la revoca, l'acreditació deixa de valer i la cartera queda fora de l'ecosistema
 
 ---v
 
@@ -211,6 +209,16 @@ Totes dues porten una **referència de revocació**: així els emissors poden co
 - L'ARF 3.0, però, només tracta les de **persones físiques**
   - Les de persones jurídiques s'han separat cap a una futura **cartera d'empresa** (_business wallet_)
 - També assumeix que el dispositiu és **personal**: només l'usuari hi té accés
+
+---
+
+## Idees clau
+
+- Dinou rols, però **tres de centrals**: qui emet, qui guarda i presenta, i qui demana
+- La unitat de cartera és l'**aplicació més un dispositiu criptogràfic segur**; les claus del PID no en surten mai
+- La cartera parla amb tothom per **protocols estàndard**: OpenID4VCI, OpenID4VP, ISO/IEC 18013-5
+- Només val quan està **activada, acreditada i té un PID vàlid**; la revocació és definitiva
+- Cap solució de cartera arriba al públic sense **certificació**
 
 ---
 

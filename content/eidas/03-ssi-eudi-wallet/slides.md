@@ -27,6 +27,8 @@
 
 ![Ecosistema de la EUDI Wallet: emissors, titular i part usuària, sobre una infraestructura de confiança](./img/ecosistema.svg)
 
+Els mateixos tres papers de la SSI, amb noms nous. Qui és cadascun, al tema 4.
+
 ---
 
 ## De la SSI a eIDAS 2.0: vocabulari
@@ -121,6 +123,15 @@ Es veuran amb detall als temes de credencials i protocols.
 - **No**, en la confiança: no és descentralitzada
   - Emissors, verificadors i carteres han de ser admesos per una autoritat
 - Es pot entendre com una **SSI regulada**: el model de la cartera, amb la confiança ancorada en el marc legal
+
+---
+
+## Idees clau
+
+- eIDAS 2.0 adopta la **manera d'interactuar** de la SSI: credencials a la cartera, divulgació selectiva, pseudònims
+- No n'adopta la **confiança descentralitzada**: certificats X.509 i llistes signades, en lloc de DID i registres distribuïts
+- Qui emet, qui verifica i qui proveeix carteres ha d'estar **registrat o certificat**
+- L'**ARF** diu com construir-ho; només el reglament i els actes d'execució obliguen
 
 ---
 
