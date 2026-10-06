@@ -44,6 +44,25 @@
 
 ---
 
+## Què és un certificat X.509?
+
+- Un fitxer que lliga una **clau pública** amb la **identitat** de qui la té
+  - Diu de qui és, qui ho certifica, fins quan val, i porta la **signatura** de l'autoritat que l'ha emès
+- X.509 és l'estàndard que en fixa el format; és el mateix dels certificats dels llocs web i del DNI electrònic
+- Es verifica seguint la **cadena**: el certificat el signa una autoritat, que té el seu propi certificat, fins a arribar a una **àncora de confiança**
+
+---v
+
+## Com s'usen a eIDAS 2.0
+
+- Els **emissors** signen el PID i les declaracions amb una clau que té certificat; la part usuària en segueix la cadena fins a una llista de confiança
+- Les **parts usuàries** s'autentiquen davant la cartera amb un certificat d'accés
+- El **proveïdor de la cartera** acredita cada unitat amb certificats propis
+- Les **signatures qualificades** es basen en un certificat qualificat
+- A la SSI aquest paper el fa el DID, resolt en un registre descentralitzat; aquí el fa el certificat, resolt en una llista signada
+
+---
+
 ## Els emissors
 
 - **Proveïdor de PID** (_PID Provider_): verifica la identitat de l'usuari amb nivell de garantia alt i n'emet les dades d'identificació
