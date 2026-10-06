@@ -55,9 +55,11 @@
 
 ## Fonts autèntiques (_Authentic Sources_)
 
-- Repositoris o sistemes, públics o privats, **reconeguts o exigits per llei**
-- Contenen atributs sobre persones: adreça, edat, nacionalitat, titulacions, llicències...
-- Els proveïdors de declaracions hi poden **verificar** els atributs abans d'emetre'ls
+- Una **font autèntica** és el registre oficial on una dada és veritat per definició
+  - El padró, per a l'adreça; el registre civil, per al naixement; la universitat, per a un títol
+- Quan un emissor vol posar una dada en una declaració, la **comprova** contra la font autèntica
+  - La declaració no inventa res: certifica el que ja diu el registre
+- Si qui emet és el mateix **organisme responsable** del registre, la declaració és una Pub-EAA
 
 ---
 
@@ -68,7 +70,16 @@
 - **Unitat de cartera** (_Wallet Unit_): la configuració concreta que controla un usuari
   - La **instància** de la cartera (_Wallet Instance_): l'aplicació instal·lada al dispositiu
   - Un **dispositiu criptogràfic segur** (WSCD, _Wallet Secure Cryptographic Device_), que custodia les claus privades
-- El proveïdor **acredita** cada unitat davant dels altres actors, i la pot revocar
+
+---v
+
+## Acreditar i revocar una cartera
+
+- El proveïdor **acredita** cada unitat: li dona un certificat que demostra que és una cartera autèntica, amb les claus en un dispositiu segur
+  - Els emissors ho comproven abans d'emetre-hi res
+  - Com el certificat d'un lloc web, però per a la cartera
+- Si la cartera es perd o es compromet, el proveïdor la **revoca**
+  - Deixa de ser acceptada, i els PID que contenia es revoquen també
 
 ---
 
