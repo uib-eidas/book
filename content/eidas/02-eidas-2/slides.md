@@ -16,13 +16,10 @@
 
 ## Pilar 1: identificació electrònica
 
-- Cada estat membre manté el seu propi sistema d'identificació electrònica
-- L'estat pot **notificar** el seu sistema a la Comissió
-- **Reconeixement mutu**: els serveis públics dels altres estats han d'acceptar els sistemes notificats
-- Tres **nivells de garantia**:
-  - Baix
-  - Substancial
-  - Alt
+- Cada estat membre té el seu propi sistema d'identificació electrònica, com el DNI electrònic a Espanya
+- L'estat pot **notificar-lo**: comunicar-lo formalment a la Comissió perquè els altres estats l'avaluïn i el reconeguin
+  - És voluntari: cada estat decideix si ho fa
+- **Reconeixement mutu**: un cop notificat, els serveis públics dels altres estats l'han d'acceptar
 
 ---v
 
@@ -53,6 +50,8 @@
 ## Cronologia
 
 ![Cronologia d'eIDAS a eIDAS 2.0, de 2014 a finals de 2027](./img/cronologia.svg)
+
+Els **actes d'execució** són els reglaments amb què la Comissió concreta els detalls tècnics de la cartera. Els dos terminis es compten des que van entrar en vigor: 24 mesos per a les carteres i 36 per a l'acceptació pel sector privat.
 
 ---
 
@@ -196,16 +195,6 @@ Sempre a **petició voluntària de l'usuari**.
 | **Dades**                 | Identitat                              | Identitat i atributs                            |
 | **Control de l'usuari**   | No previst                             | Divulgació selectiva                            |
 | **Serveis de confiança**  | Signatura, segell, temps, entrega, web | S'hi afegeixen atributs, arxiu i llibres majors |
-
----
-
-## Calendari d'aplicació
-
-- **20 de maig de 2024**: entrada en vigor del reglament
-- **Desembre de 2024**: primers **actes d'execució** de la cartera
-  - Els terminis es compten des de la seva entrada en vigor
-- **24 mesos** després (finals de 2026): cada estat ha d'oferir almenys una cartera
-- **36 mesos** després (finals de 2027): el sector privat obligat l'ha d'acceptar
 
 ---
 
