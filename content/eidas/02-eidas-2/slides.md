@@ -47,14 +47,6 @@
 
 ---
 
-## Cronologia
-
-![Cronologia d'eIDAS a eIDAS 2.0, de 2014 a finals de 2027](./img/cronologia.svg)
-
-Els **actes d'execució** són els reglaments amb què la Comissió concreta els detalls tècnics de la cartera. Els dos terminis es compten des que van entrar en vigor: 24 mesos per a les carteres i 36 per a l'acceptació pel sector privat.
-
----
-
 ## eIDAS 2.0
 
 - **Reglament (UE) 2024/1183**, d'11 d'abril de 2024
@@ -195,6 +187,14 @@ Sempre a **petició voluntària de l'usuari**.
 | **Dades**                 | Identitat                              | Identitat i atributs                            |
 | **Control de l'usuari**   | No previst                             | Divulgació selectiva                            |
 | **Serveis de confiança**  | Signatura, segell, temps, entrega, web | S'hi afegeixen atributs, arxiu i llibres majors |
+
+---
+
+## Cronologia
+
+![Cronologia d'eIDAS a eIDAS 2.0, de 2014 a finals de 2027](./img/cronologia.svg)
+
+Els **actes d'execució** són els reglaments amb què la Comissió concreta els detalls tècnics de la cartera. Els dos terminis es compten des que van entrar en vigor: 24 mesos per a les carteres i 36 per a l'acceptació pel sector privat.
 
 ---
 
