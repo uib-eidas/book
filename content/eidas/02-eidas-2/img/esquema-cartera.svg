@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle">
+  <defs>
+    <marker id="fletxa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#0065bd"/>
+    </marker>
+  </defs>
+  <rect width="960" height="460" fill="#ffffff"/>
+
+  <g font-weight="bold" font-size="18" fill="#0065bd">
+    <text x="160" y="44">Emissors</text>
+    <text x="480" y="44">Usuari · titular</text>
+    <text x="810" y="44">Part usuària · verificador</text>
+  </g>
+
+  <!-- fletxes d'emissió -->
+  <g stroke="#0065bd" stroke-width="2.5" marker-end="url(#fletxa)">
+    <line x1="292" y1="135" x2="336" y2="135"/>
+    <line x1="292" y1="220" x2="336" y2="220"/>
+    <line x1="292" y1="255" x2="336" y2="255"/>
+    <line x1="292" y1="290" x2="336" y2="290"/>
+  </g>
+  <!-- fletxes amb la part usuària -->
+  <g stroke="#0065bd" stroke-width="3" marker-end="url(#fletxa)">
+    <line x1="686" y1="205" x2="624" y2="205"/>
+    <line x1="624" y1="250" x2="686" y2="250"/>
+  </g>
+
+  <!-- emissors -->
+  <g fill="#e8f1fa" stroke="#0065bd" stroke-width="2.5">
+    <rect x="30" y="110" width="260" height="50" rx="8"/>
+    <rect x="30" y="205" width="260" height="30" rx="8"/>
+    <rect x="30" y="240" width="260" height="30" rx="8"/>
+    <rect x="30" y="275" width="260" height="30" rx="8"/>
+  </g>
+  <g fill="#1a1a1a">
+    <text x="160" y="131" font-weight="bold">Proveïdor de PID</text>
+    <text x="160" y="150" font-size="13" fill="#444444">designat per l'estat</text>
+    <text x="160" y="225">Prestador qualificat de confiança</text>
+    <text x="160" y="260">Organisme públic amb font autèntica</text>
+    <text x="160" y="295">Prestador no qualificat</text>
+  </g>
+
+  <!-- cartera -->
+  <rect x="340" y="70" width="280" height="330" rx="22" fill="#f6f9fc" stroke="#0065bd" stroke-width="3"/>
+  <text x="480" y="98" font-weight="bold" font-size="17" fill="#0065bd">Cartera (EUDI Wallet)</text>
+
+  <rect x="360" y="110" width="240" height="50" rx="8" fill="#fff4e0" stroke="#b3541e" stroke-width="2.5"/>
+  <text x="480" y="131" font-weight="bold">PID</text>
+  <text x="480" y="150" font-size="13" fill="#444444">qui ets: nom, naixement, nacionalitat</text>
+
+  <rect x="360" y="180" width="240" height="135" rx="8" fill="#ffffff" stroke="#0065bd" stroke-width="2.5"/>
+  <text x="480" y="197" font-weight="bold" font-size="13">Declaracions d'atributs (EAA)</text>
+  <g fill="#e8f1fa" stroke="#0065bd" stroke-width="2">
+    <rect x="375" y="205" width="210" height="30" rx="6"/>
+    <rect x="375" y="240" width="210" height="30" rx="6"/>
+    <rect x="375" y="275" width="210" height="30" rx="6"/>
+  </g>
+  <g fill="#1a1a1a">
+    <text x="480" y="225">QEAA</text>
+    <text x="480" y="260">Pub-EAA</text>
+    <text x="480" y="295">EAA no qualificada</text>
+  </g>
+
+  <rect x="360" y="335" width="240" height="50" rx="8" fill="#e8f1fa" stroke="#0065bd" stroke-width="2.5"/>
+  <text x="480" y="356" font-weight="bold">Signatura qualificada (QES)</text>
+  <text x="480" y="375" font-size="13" fill="#444444">gratuïta per a persones físiques</text>
+
+  <!-- part usuària -->
+  <rect x="690" y="170" width="240" height="110" rx="10" fill="#e8f1fa" stroke="#0065bd" stroke-width="3"/>
+  <text x="810" y="210" font-weight="bold" font-size="17">Part usuària</text>
+  <text x="810" y="232" font-size="13" fill="#444444">banc, botiga en línia,</text>
+  <text x="810" y="250" font-size="13" fill="#444444">administració</text>
+
+  <g fill="#1a1a1a" font-size="13">
+    <text x="655" y="196">Demana</text>
+    <text x="655" y="270">Presenta</text>
+  </g>
+  <g fill="#444444" font-size="13">
+    <text x="810" y="310">Registrada al seu estat</text>
+    <text x="810" y="328">Només pot demanar el que va declarar</text>
+  </g>
+
+  <text x="480" y="440" fill="#444444">Tres papers: qui emet, qui guarda i presenta, i qui demana i verifica.</text>
+</svg>

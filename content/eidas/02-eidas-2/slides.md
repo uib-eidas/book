@@ -227,6 +227,12 @@ Si els presta un prestador qualificat, tenen presumpció legal de validesa. Es v
 
 ---
 
+## Tot en un esquema
+
+![La cartera amb el PID, les declaracions d'atributs i la signatura qualificada; els emissors a l'esquerra i la part usuària a la dreta](./img/esquema-cartera.svg)
+
+---
+
 ## Cronologia
 
 ![Cronologia d'eIDAS a eIDAS 2.0, de 2014 a finals de 2027](./img/cronologia.svg)
