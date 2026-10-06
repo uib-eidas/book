@@ -4,9 +4,9 @@
 
 ## De credencials a declaracions
 
-- A la SSI en dèiem **credencials verificables**
-- A eIDAS 2.0, les dades s'intercanvien en forma de **declaracions electròniques d'atributs**
-- El reglament hi afegeix una categoria a part: les **dades d'identificació de la persona** (PID)
+- A la SSI en dèiem **credencials verificables** (_Verifiable Credentials_, VC)
+- A eIDAS 2.0, les dades s'intercanvien en forma de **declaracions electròniques d'atributs** (EAA, _Electronic Attestation of Attributes_)
+- El reglament hi afegeix una categoria a part: les **dades d'identificació de la persona** (PID, _Person Identification Data_)
 - Tècnicament, PID i declaracions es construeixen igual
 
 ---
@@ -19,24 +19,24 @@
 
 ## Les tres parts
 
-- **Atributs**: la informació sobre el subjecte
-  - La part usuària en demana només els que necessita
-- **Metadades**: la informació sobre la declaració mateixa
+- **Atributs** (_attributes_): la informació sobre el subjecte
+  - La part usuària (_Relying Party_) en demana només els que necessita
+- **Metadades** (_metadata_): la informació sobre la declaració mateixa
   - Tipus, proveïdor i període de validesa
   - Clau pública que la vincula al dispositiu
   - Referència per comprovar si ha estat revocada
-- **Prova**: garanteix la integritat i l'autenticitat
-  - Ha de permetre la **divulgació selectiva**
+- **Prova** (_proof_): garanteix la integritat i l'autenticitat
+  - Ha de permetre la **divulgació selectiva** (_selective disclosure_)
   - Inclou el certificat del proveïdor i la referència a l'àncora de confiança
 
 ---
 
 ## Quatre categories legals
 
-- **PID**: dades d'identificació de la persona
-- **QEAA**: declaració qualificada, emesa per un prestador qualificat
-- **Pub-EAA**: emesa per un organisme públic responsable d'una font autèntica
-- **EAA**: declaració no qualificada
+- **PID** (_Person Identification Data_): dades d'identificació de la persona
+- **QEAA** (_Qualified EAA_): declaració qualificada, emesa per un prestador qualificat (QTSP)
+- **Pub-EAA** (_Public body EAA_): emesa per un organisme públic responsable d'una font autèntica (_authentic source_)
+- **EAA** (_non-qualified EAA_): declaració no qualificada
 
 La diferència és **purament legal**, no tècnica:
 
@@ -89,7 +89,7 @@ La diferència és **purament legal**, no tècnica:
 
 ## mdoc
 
-- Neix com a estàndard del **permís de conduir mòbil** (mDL)
+- Neix com a estàndard del **permís de conduir mòbil** (mDL, _mobile Driving Licence_)
   - Només l'esquema d'atributs és específic del permís; la resta és genèric
 - Codificació binària **CBOR**, amb espais de noms per evitar col·lisions
 - La vinculació al dispositiu és **obligatòria**
@@ -99,18 +99,18 @@ La diferència és **purament legal**, no tècnica:
 
 ## SD-JWT VC
 
-- Un **JSON Web Token** amb divulgació selectiva
-- Cada tipus de declaració s'identifica amb un **tipus de credencial** (`vct`)
+- Un **JSON Web Token** (JWT) amb divulgació selectiva (_Selective Disclosure JWT_, SD-JWT)
+- Cada tipus de declaració s'identifica amb un **tipus de credencial** (`vct`, _verifiable credential type_)
   - Un tipus en pot estendre un altre: tipus nacionals a partir d'un tipus europeu comú
 - La vinculació al dispositiu és opcional a l'estàndard
 - Només per a presentacions **remotes**
-- Té moltes opcions: cal seguir el perfil **HAIP** per garantir la interoperabilitat
+- Té moltes opcions: cal seguir el perfil **HAIP** (_High Assurance Interoperability Profile_) per garantir la interoperabilitat
 
 ---v
 
 ## W3C VCDM
 
-- Un **model de dades** general, basat en JSON-LD
+- Un **model de dades** general (VCDM, _Verifiable Credentials Data Model_), basat en JSON-LD
 - Deixa oberts els mecanismes de seguretat, la signatura i el transport
   - Cal un perfil addicional per ser interoperable
 - A la cartera és **opcional**, i només per a declaracions **no qualificades**
@@ -118,7 +118,7 @@ La diferència és **purament legal**, no tècnica:
 
 ---
 
-## Divulgació selectiva
+## Divulgació selectiva (_selective disclosure_)
 
 ![Divulgació selectiva amb hashes amb sal: l'emissor signa els hashes, la cartera revela només alguns atributs i la part usuària els verifica](./img/divulgacio-selectiva.svg)
 
@@ -126,7 +126,7 @@ La diferència és **purament legal**, no tècnica:
 
 ## Com funciona
 
-1. L'emissor calcula el **hash** de cada atribut, combinat amb una **sal** aleatòria
+1. L'emissor calcula el **hash** de cada atribut, combinat amb una **sal** aleatòria (_salted hash_)
 2. Signa la llista de hashes, no els valors
 3. La cartera envia la llista signada i, només per als atributs triats, el **valor i la sal**
 4. La part usuària recalcula els hashes i comprova que són a la llista signada
@@ -185,7 +185,7 @@ Els atributs no hi apareixen: només els seus **hashes**.
 
 ## Una divulgació
 
-Per a cada atribut, la cartera guarda una **divulgació**: la sal, el nom i el valor.
+Per a cada atribut, la cartera guarda una **divulgació** (_disclosure_): la sal, el nom i el valor.
 
 ```json
 ["2GLC42sKQveCfGfryNRN9w", "nationalities", ["ES"]]
@@ -221,12 +221,12 @@ La prova de possessió la signa la cartera, amb la clau privada del dispositiu:
 
 ---
 
-## Vinculació al dispositiu
+## Vinculació al dispositiu (_device binding_)
 
 - Evita que una declaració es pugui **copiar** a una altra cartera
 - La declaració conté una **clau pública**; la privada no surt mai del WSCD o del magatzem de claus
 - En cada presentació, la cartera **signa un repte** aleatori de la part usuària
-  - Per això també se'n diu **prova de possessió**
+  - Per això també se'n diu **prova de possessió** (_proof of possession_; _key binding_ a SD-JWT, _mdoc authentication_ a ISO)
 - **Obligatòria** per al PID i per a totes les declaracions mdoc
 - **Recomanada** per a les declaracions SD-JWT VC
 
@@ -236,8 +236,8 @@ La prova de possessió la signa la cartera, amb la clau privada del dispositiu:
 
 - Si una declaració és vàlida més de **24 hores**, ha d'incloure informació de revocació
 - Dos mecanismes:
-  - **Llista d'estat**: una cadena de bits; cada declaració hi té una posició
-  - **Llista de revocació**: els identificadors de les declaracions revocades
+  - **Llista d'estat** (_status list_): una cadena de bits; cada declaració hi té una posició
+  - **Llista de revocació** (_revocation list_): els identificadors de les declaracions revocades
 - La part usuària descarrega la llista i hi consulta la declaració rebuda
   - És recomanable, però no obligatori
   - Sense connexió, ha de decidir segons el risc
@@ -246,11 +246,11 @@ La prova de possessió la signa la cartera, amb la clau privada del dispositiu:
 
 ## Declaració lògica i declaració tècnica
 
-- **Lògica**: el que veu l'usuari, per exemple «el meu PID»
-- **Tècnica**: l'objecte signat que realment es presenta
+- **Lògica** (_logical_): el que veu l'usuari, per exemple «el meu PID»
+- **Tècnica** (_technical_): l'objecte signat que realment es presenta
 - Una declaració lògica correspon a **moltes de tècniques**
-  - L'emissor en pot lliurar un **lot**
-  - Tenen una validesa tècnica curta i es **reemeten** periòdicament
+  - L'emissor en pot lliurar un **lot** (_batch issuance_)
+  - Tenen una validesa tècnica curta i es **reemeten** periòdicament (_re-issuance_)
 - Presentar-ne una de diferent cada vegada dificulta que les parts usuàries **relacionin** les presentacions d'un mateix usuari
 
 ---
@@ -259,8 +259,8 @@ La prova de possessió la signa la cartera, amb la clau privada del dispositiu:
 
 - **Llibre de regles** (_Rulebook_): la documentació per a persones
   - Quins atributs té cada tipus de declaració, què signifiquen i com es codifiquen
-- **Esquema de declaració**: la mateixa especificació, llegible per programes
-- **Catàleg d'esquemes**: on es publiquen, perquè tothom els trobi
+- **Esquema de declaració** (_attestation scheme_): la mateixa especificació, llegible per programes
+- **Catàleg d'esquemes** (_catalogue of attestation schemes_): on es publiquen, perquè tothom els trobi
   - És públic, i registrar-s'hi no és obligatori
   - Aparèixer-hi no obliga ningú a acceptar la declaració
 
@@ -271,7 +271,7 @@ La prova de possessió la signa la cartera, amb la clau privada del dispositiu:
 - La **Comissió Europea**: el del PID i el del permís de conduir mòbil
 - **Administracions i organitzacions sectorials**: llibres de regles europeus o de sector, per exemple per a titulacions
 - **Proveïdors de declaracions**: extensions amb atributs nacionals o propis
-- Hi ha també un **catàleg d'atributs**, perquè els prestadors qualificats sàpiguen a quina font autèntica verificar cada atribut
+- Hi ha també un **catàleg d'atributs** (_catalogue of attributes_), perquè els prestadors qualificats sàpiguen a quina font autèntica verificar cada atribut
 
 ---
 
