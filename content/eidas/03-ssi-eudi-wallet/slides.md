@@ -31,29 +31,29 @@
 
 ## De la SSI a eIDAS 2.0: vocabulari
 
-| SSI                               | eIDAS 2.0                                            |
-| --------------------------------- | ---------------------------------------------------- |
-| **Emissor**                       | Proveïdor de PID o de declaracions d'atributs        |
-| **Titular**                       | Usuari de la cartera                                 |
-| **Cartera i agent**               | Unitat de cartera (_Wallet Unit_)                    |
-| **Verificador**                   | Part usuària                                         |
-| **Credencial verificable**        | PID i declaracions electròniques d'atributs          |
-| **DID**                           | Certificats X.509                                    |
-| **Registre de dades verificable** | Llistes de confiança                                 |
-| **Marc de governança**            | Reglament, actes d'execució i esquemes de declaració |
+| SSI                               | eIDAS 2.0                                                                                                                |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Emissor**                       | Proveïdor de PID (_PID Provider_) o de declaracions d'atributs (_Attestation Provider_)                                  |
+| **Titular**                       | Usuari de la cartera                                                                                                     |
+| **Cartera i agent**               | Unitat de cartera (_Wallet Unit_)                                                                                        |
+| **Verificador**                   | Part usuària (_Relying Party_)                                                                                           |
+| **Credencial verificable**        | PID (_Person Identification Data_) i declaracions electròniques d'atributs (EAA, _Electronic Attestation of Attributes_) |
+| **DID**                           | Certificats X.509                                                                                                        |
+| **Registre de dades verificable** | Llistes de confiança (_Trusted Lists_)                                                                                   |
+| **Marc de governança**            | Reglament, actes d'execució i esquemes de declaració (_Attestation Schemes_)                                             |
 
 ---
 
 ## Els emissors
 
-- **Proveïdor de PID**: verifica la identitat de l'usuari amb nivell de garantia alt i n'emet les dades d'identificació
-- **Proveïdor de QEAA**: un prestador **qualificat** de serveis de confiança
-- **Proveïdor de Pub-EAA**: un organisme públic responsable d'una font autèntica, o algú en nom seu
-- **Proveïdor d'EAA**: qualsevol prestador de serveis de confiança **no qualificat**
+- **Proveïdor de PID** (_PID Provider_): verifica la identitat de l'usuari amb nivell de garantia alt i n'emet les dades d'identificació
+- **Proveïdor de QEAA** (_Qualified EAA_): un prestador **qualificat** de serveis de confiança (_QTSP_)
+- **Proveïdor de Pub-EAA** (_Public body EAA_): un organisme públic responsable d'una font autèntica, o algú en nom seu
+- **Proveïdor d'EAA** (_non-qualified EAA_): qualsevol prestador de serveis de confiança **no qualificat**
 
 ---v
 
-## Fonts autèntiques
+## Fonts autèntiques (_Authentic Sources_)
 
 - Repositoris o sistemes, públics o privats, **reconeguts o exigits per llei**
 - Contenen atributs sobre persones: adreça, edat, nacionalitat, titulacions, llicències...
@@ -63,20 +63,20 @@
 
 ## El titular: usuari i unitat de cartera
 
-- **Proveïdor de la cartera**: un estat membre, o una organització amb mandat o reconeixement d'un estat
-- **Solució de cartera**: el producte complet, que ha d'estar **certificat**
+- **Proveïdor de la cartera** (_Wallet Provider_): un estat membre, o una organització amb mandat o reconeixement d'un estat
+- **Solució de cartera** (_Wallet Solution_): el producte complet, que ha d'estar **certificat**
 - **Unitat de cartera** (_Wallet Unit_): la configuració concreta que controla un usuari
-  - La **instància** de la cartera: l'aplicació instal·lada al dispositiu
-  - Un **dispositiu criptogràfic segur** (WSCD), que custodia les claus privades
+  - La **instància** de la cartera (_Wallet Instance_): l'aplicació instal·lada al dispositiu
+  - Un **dispositiu criptogràfic segur** (WSCD, _Wallet Secure Cryptographic Device_), que custodia les claus privades
 - El proveïdor **acredita** cada unitat davant dels altres actors, i la pot revocar
 
 ---
 
-## El verificador: la part usuària
+## El verificador: la part usuària (_Relying Party_)
 
 - Un proveïdor de serveis que **demana atributs** a la cartera, amb l'aprovació de l'usuari
 - S'ha de **registrar** a l'estat membre on està establert
-- Rep un **certificat d'accés** per a cada una de les seves instàncies
+- Rep un **certificat d'accés** (_access certificate_) per a cada una de les seves instàncies
   - Permet a la cartera autenticar qui li demana les dades
 - Els **intermediaris** que actuen en nom seu també es consideren parts usuàries, i no poden guardar el contingut de les transaccions
 
@@ -110,10 +110,10 @@
 
 ## D'on surt la confiança
 
-- No d'un registre descentralitzat, sinó de **llistes signades** per una autoritat
+- No d'un registre descentralitzat, sinó de **llistes signades** per una autoritat (_Trusted Lists_)
   - Les dels prestadors qualificats, les signa cada **estat membre**
   - Les de proveïdors de cartera, de PID i de Pub-EAA, les signa la **Comissió**
-- Emissors i parts usuàries s'han de **registrar** al seu estat membre
+- Emissors i parts usuàries s'han de **registrar** al seu estat membre, davant d'un registrador (_Registrar_)
   - Reben certificats amb què s'autentiquen davant la cartera
 
 Es veurà amb detall al tema d'infraestructura de confiança.
