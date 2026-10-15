@@ -41,7 +41,7 @@ El `package.json` inclou dos scripts per veure el contingut en local. Necessiteu
 yarn serve-slides
 ```
 
-**Llibre** (`serve-book`): amb Python 3, serveix el contingut de la carpeta `html-book` a `http://localhost:1949`. No compila ni detecta canvis, així que primer heu de generar el llibre i tornar-ho a fer després de cada modificació. Els diagrames Mermaid del llibre es carreguen de `node_modules`, així que cal haver fet `yarn install` abans de `mdbook build`.
+**Llibre** (`serve-book`): amb Python 3, serveix el contingut de la carpeta `html-book` a `http://localhost:1949`. No compila ni detecta canvis, així que primer heu de generar el llibre i tornar-ho a fer després de cada modificació.
 
 ```sh
 mdbook build
