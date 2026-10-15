@@ -4,7 +4,37 @@
 
 ## Tots els termes en un mapa
 
-![Mapa de termes d'eIDAS 2.0: el triangle de confiança (emissors, usuari i part usuària) amb la cartera al centre, i al voltant la confiança, els serveis de confiança i el proveïdor de la cartera](./img/mapa-termes.svg)<!-- .element: style="max-height: 660px; width: auto;" -->
+```mermaid
+%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#e8f1fa", "primaryTextColor": "#1a1a1a", "primaryBorderColor": "#0065bd", "lineColor": "#0065bd", "secondaryColor": "#fff4e0", "tertiaryColor": "#f6f9fc", "fontFamily": "Helvetica, Arial, sans-serif", "fontSize": "16px"}, "flowchart": {"htmlLabels": true, "nodeSpacing": 30, "rankSpacing": 40, "diagramPadding": 20}}}%%
+flowchart TB
+  U["<b>Usuari</b> (titular)"]:::actor
+
+  subgraph W["<b>Cartera</b> (EUDI Wallet)"]
+    direction LR
+    WU["<b>Unitat de cartera</b><br/>Proveïdor: estat o organització reconeguda<br/>Solució de cartera (certificada)<br/>Instància · WSCA · WSCD<br/>Magatzem de claus · QSCD<br/>WIA · KA (acreditacions)<br/>Estats: instal·lada · operativa · vàlida · revocada"]
+    CR["<b>Credencials</b><br/>PID<br/>EAA: QEAA · Pub-EAA · no qualificada<br/>Formats: mdoc · SD-JWT VC · W3C VCDM<br/>Divulgació selectiva · Vinculació al dispositiu<br/>Revocació · Llibre de regles"]
+  end
+
+  TS["<b>Serveis de confiança</b><br/>Signatura (QES) · segell<br/>Segell de temps · Entrega certificada<br/>QWAC · Arxiu · Llibres majors<br/>Signatura en remot (QESRC)"]
+  PR["<b>Protocols</b><br/>OpenID4VCI (emissió)<br/>OpenID4VP (remot)<br/>ISO/IEC 18013-5 (presencial) · 18013-7<br/>HAIP · DCQL<br/>API de credencials digitals · Dades transaccionals"]
+  EM["<b>Emissors</b><br/>Proveïdor de PID<br/>Proveïdors d'EAA: QTSP · públic · no qualificat<br/>Fonts autèntiques<br/>Catàleg d'esquemes i d'atributs"]:::actor
+  RP["<b>Part usuària</b> (verificador)<br/>Banc · botiga · administració<br/>Intermediaris<br/>Certificat d'accés · de registre"]:::actor
+  TR["<b>Infraestructura de confiança</b><br/>Certificats X.509 · Àncora de confiança<br/>Llistes de confiança (ETSI TS 119 612)<br/>LoTE (ETSI TS 119 602)<br/>Registrador · Autoritat de certificats d'accés<br/>CAB · NAB · Supervisió<br/>Certificació (CSA · ENISA)"]
+
+  U -- controla --> W
+  TS -- "QES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" --> W
+  W -- usa --> PR
+  EM == emet ==> W
+  W == presenta ==> RP
+  TR -- registra --> EM
+  TR -- certifica --> W
+  TR -- registra --> RP
+  RP -. "es fia de l'emissor per les llistes" .-> EM
+
+  classDef default fill:#e8f1fa,stroke:#0065bd,color:#1a1a1a,text-align:left
+  classDef actor fill:#fff4e0,stroke:#b3541e,stroke-width:2px,color:#1a1a1a,text-align:left
+  style W fill:#f6f9fc,stroke:#0065bd,stroke-width:2px
+```
 
 ---
 

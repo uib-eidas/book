@@ -15,5 +15,8 @@
   },
   "dependencies": {
     "reveal-md": "^5.5.2"
+  },
+  "devDependencies": {
+    "mermaid": "9.3.0"
   }
 }

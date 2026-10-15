@@ -661,3 +661,24 @@ code {
     /* Modern Browsers */ url('./fonts/work-sans/work-sans-v17-latin-800italic.ttf') format('truetype'),
     /* Safari, Android, iOS */ url('./fonts/work-sans/work-sans-v17-latin-800italic.svg#WorkSans') format('svg'); /* Legacy iOS */
 }
+
+/* Mermaid diagrams written as ```mermaid blocks: no code-box styling */
+.reveal pre.code-wrapper:has(> code.mermaid) {
+  background: transparent;
+  box-shadow: none;
+  width: 100%;
+}
+.reveal code.mermaid {
+  display: block;
+  background: transparent;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: normal;
+  padding: 0;
+  max-height: none;
+}
+.reveal code.mermaid svg {
+  max-width: 100% !important;
+  max-height: 700px;
+}
