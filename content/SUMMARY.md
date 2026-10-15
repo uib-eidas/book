@@ -17,6 +17,7 @@
 - [✍️ Serveis de confiança](./eidas/08-trust-services/page.md)
 - [🔐 Privadesa i seguretat](./eidas/09-privacy-security/page.md)
 - [🚀 Implementació](./eidas/10-implementation/page.md)
+- [🗺️ Resum: el mapa d'eIDAS 2.0](./eidas/11-summary/page.md)
 
 ---
 
